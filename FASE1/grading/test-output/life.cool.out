@@ -1,0 +1,2121 @@
+'('
+'*'
+TYPEID The
+TYPEID Game
+OF
+TYPEID Life
+TYPEID Tendo
+TYPEID Kayiira
+','
+TYPEID Summer
+LEXER BUG - UNMATCHED: '
+INT_CONST 95
+TYPEID With
+OBJECTID code
+OBJECTID taken
+OBJECTID from
+'/'
+OBJECTID private
+'/'
+OBJECTID cool
+'/'
+CLASS
+'/'
+OBJECTID examples
+'/'
+OBJECTID cells
+'.'
+OBJECTID cl
+TYPEID This
+OBJECTID introduction
+OBJECTID was
+OBJECTID taken
+OBJECTID off
+OBJECTID the
+OBJECTID internet
+'.'
+TYPEID It
+OBJECTID gives
+OBJECTID a
+OBJECTID brief
+OBJECTID description
+OF
+OBJECTID the
+TYPEID Game
+OF
+TYPEID Life
+'.'
+TYPEID It
+OBJECTID also
+OBJECTID gives
+OBJECTID the
+OBJECTID rules
+OBJECTID by
+OBJECTID which
+OBJECTID this
+OBJECTID particular
+OBJECTID game
+OBJECTID follows
+'.'
+TYPEID Introduction
+TYPEID John
+TYPEID Conway
+LEXER BUG - UNMATCHED: '
+OBJECTID s
+TYPEID Game
+OF
+TYPEID Life
+OBJECTID is
+OBJECTID a
+OBJECTID mathematical
+OBJECTID amusement
+','
+OBJECTID but
+OBJECTID it
+OBJECTID is
+OBJECTID also
+OBJECTID much
+OBJECTID more
+':'
+OBJECTID an
+OBJECTID insight
+OBJECTID into
+OBJECTID how
+OBJECTID a
+OBJECTID system
+OF
+OBJECTID simple
+OBJECTID cellualar
+OBJECTID automata
+OBJECTID can
+OBJECTID create
+OBJECTID complex
+','
+OBJECTID odd
+','
+OBJECTID and
+OBJECTID often
+OBJECTID aesthetically
+OBJECTID pleasing
+OBJECTID patterns
+'.'
+TYPEID It
+OBJECTID is
+OBJECTID played
+OBJECTID on
+OBJECTID a
+OBJECTID cartesian
+OBJECTID grid
+OF
+OBJECTID cells
+OBJECTID which
+OBJECTID are
+OBJECTID either
+LEXER BUG - UNMATCHED: '
+OBJECTID on
+LEXER BUG - UNMATCHED: '
+OBJECTID or
+LEXER BUG - UNMATCHED: '
+OBJECTID off
+LEXER BUG - UNMATCHED: '
+TYPEID The
+OBJECTID game
+OBJECTID gets
+OBJECTID it
+LEXER BUG - UNMATCHED: '
+OBJECTID s
+OBJECTID name
+OBJECTID from
+OBJECTID the
+OBJECTID similarity
+OBJECTID between
+OBJECTID the
+OBJECTID behaviour
+OF
+OBJECTID these
+OBJECTID cells
+OBJECTID and
+OBJECTID the
+OBJECTID behaviour
+OF
+OBJECTID living
+OBJECTID organisms
+'.'
+TYPEID The
+TYPEID Rules
+TYPEID The
+OBJECTID playfield
+OBJECTID is
+OBJECTID a
+OBJECTID cartesian
+OBJECTID grid
+OF
+OBJECTID arbitrary
+OBJECTID size
+'.'
+TYPEID Each
+OBJECTID cell
+IN
+OBJECTID this
+OBJECTID grid
+OBJECTID can
+OBJECTID be
+IN
+OBJECTID an
+LEXER BUG - UNMATCHED: '
+OBJECTID on
+LEXER BUG - UNMATCHED: '
+OBJECTID state
+OBJECTID or
+OBJECTID an
+LEXER BUG - UNMATCHED: '
+OBJECTID off
+LEXER BUG - UNMATCHED: '
+OBJECTID state
+'.'
+TYPEID On
+OBJECTID each
+LEXER BUG - UNMATCHED: '
+OBJECTID turn
+LEXER BUG - UNMATCHED: '
+'('
+OBJECTID called
+OBJECTID a
+OBJECTID generation
+','
+')'
+OBJECTID the
+OBJECTID state
+OF
+OBJECTID each
+OBJECTID cell
+OBJECTID changes
+OBJECTID simultaneously
+OBJECTID depending
+OBJECTID on
+OBJECTID it
+LEXER BUG - UNMATCHED: '
+OBJECTID s
+OBJECTID state
+OBJECTID and
+OBJECTID the
+OBJECTID state
+OF
+OBJECTID all
+OBJECTID cells
+OBJECTID adjacent
+OBJECTID to
+OBJECTID it
+'.'
+TYPEID For
+LEXER BUG - UNMATCHED: '
+OBJECTID on
+LEXER BUG - UNMATCHED: '
+OBJECTID cells
+','
+IF
+OBJECTID the
+OBJECTID cell
+OBJECTID has
+INT_CONST 0
+OBJECTID or
+INT_CONST 1
+OBJECTID neighbours
+OBJECTID which
+OBJECTID are
+LEXER BUG - UNMATCHED: '
+OBJECTID on
+LEXER BUG - UNMATCHED: '
+','
+OBJECTID the
+OBJECTID cell
+OBJECTID turns
+LEXER BUG - UNMATCHED: '
+OBJECTID off
+LEXER BUG - UNMATCHED: '
+'.'
+'('
+LEXER BUG - UNMATCHED: '
+OBJECTID dies
+OF
+OBJECTID loneliness
+LEXER BUG - UNMATCHED: '
+')'
+IF
+OBJECTID the
+OBJECTID cell
+OBJECTID has
+INT_CONST 2
+OBJECTID or
+INT_CONST 3
+OBJECTID neighbours
+OBJECTID which
+OBJECTID are
+LEXER BUG - UNMATCHED: '
+OBJECTID on
+LEXER BUG - UNMATCHED: '
+','
+OBJECTID the
+OBJECTID cell
+OBJECTID stays
+LEXER BUG - UNMATCHED: '
+OBJECTID on
+LEXER BUG - UNMATCHED: '
+'.'
+'('
+OBJECTID nothing
+OBJECTID happens
+OBJECTID to
+OBJECTID that
+OBJECTID cell
+')'
+IF
+OBJECTID the
+OBJECTID cell
+OBJECTID has
+INT_CONST 4
+','
+INT_CONST 5
+','
+INT_CONST 6
+','
+INT_CONST 7
+','
+INT_CONST 8
+','
+OBJECTID or
+INT_CONST 9
+OBJECTID neighbours
+OBJECTID which
+OBJECTID are
+LEXER BUG - UNMATCHED: '
+OBJECTID on
+LEXER BUG - UNMATCHED: '
+','
+OBJECTID the
+OBJECTID cell
+OBJECTID turns
+LEXER BUG - UNMATCHED: '
+OBJECTID off
+LEXER BUG - UNMATCHED: '
+'.'
+'('
+LEXER BUG - UNMATCHED: '
+OBJECTID dies
+OF
+OBJECTID overcrowding
+LEXER BUG - UNMATCHED: '
+')'
+TYPEID For
+LEXER BUG - UNMATCHED: '
+OBJECTID off
+LEXER BUG - UNMATCHED: '
+OBJECTID cells
+','
+IF
+OBJECTID the
+OBJECTID cell
+OBJECTID has
+INT_CONST 0
+','
+INT_CONST 1
+','
+INT_CONST 2
+','
+INT_CONST 4
+','
+INT_CONST 5
+','
+INT_CONST 6
+','
+INT_CONST 7
+','
+INT_CONST 8
+','
+OBJECTID or
+INT_CONST 9
+OBJECTID neighbours
+OBJECTID which
+OBJECTID are
+LEXER BUG - UNMATCHED: '
+OBJECTID on
+LEXER BUG - UNMATCHED: '
+','
+OBJECTID the
+OBJECTID cell
+OBJECTID stays
+LEXER BUG - UNMATCHED: '
+OBJECTID off
+LEXER BUG - UNMATCHED: '
+'.'
+'('
+OBJECTID nothing
+OBJECTID happens
+OBJECTID to
+OBJECTID that
+OBJECTID cell
+')'
+IF
+OBJECTID the
+OBJECTID cell
+OBJECTID has
+INT_CONST 3
+OBJECTID neighbours
+OBJECTID which
+OBJECTID are
+LEXER BUG - UNMATCHED: '
+OBJECTID on
+LEXER BUG - UNMATCHED: '
+','
+OBJECTID the
+OBJECTID cell
+OBJECTID turns
+LEXER BUG - UNMATCHED: '
+OBJECTID on
+LEXER BUG - UNMATCHED: '
+'.'
+'('
+INT_CONST 3
+OBJECTID neighbouring
+LEXER BUG - UNMATCHED: '
+OBJECTID alive
+LEXER BUG - UNMATCHED: '
+OBJECTID cells
+LEXER BUG - UNMATCHED: '
+OBJECTID give
+OBJECTID birth
+LEXER BUG - UNMATCHED: '
+OBJECTID to
+OBJECTID a
+OBJECTID fourth
+'.'
+')'
+TYPEID Repeat
+OBJECTID for
+OBJECTID as
+OBJECTID many
+OBJECTID generations
+OBJECTID as
+OBJECTID desired
+'.'
+'*'
+')'
+CLASS
+TYPEID Board
+INHERITS
+TYPEID IO
+'{'
+OBJECTID rows
+':'
+TYPEID Int
+';'
+OBJECTID columns
+':'
+TYPEID Int
+';'
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+':'
+TYPEID Int
+';'
+OBJECTID size
+LEXER BUG - UNMATCHED: _
+OF
+LEXER BUG - UNMATCHED: _
+OBJECTID board
+'('
+OBJECTID initial
+':'
+TYPEID String
+')'
+':'
+TYPEID Int
+'{'
+OBJECTID initial
+'.'
+OBJECTID length
+'('
+')'
+'}'
+';'
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID init
+'('
+OBJECTID start
+':'
+TYPEID String
+')'
+':'
+TYPEID SELF
+LEXER BUG - UNMATCHED: _
+TYPEID TYPE
+'{'
+'('
+OBJECTID let
+OBJECTID size
+':'
+TYPEID Int
+ASSIGN
+OBJECTID size
+LEXER BUG - UNMATCHED: _
+OF
+LEXER BUG - UNMATCHED: _
+OBJECTID board
+'('
+OBJECTID start
+')'
+IN
+'{'
+IF
+OBJECTID size
+'='
+INT_CONST 15
+OBJECTID then
+'{'
+OBJECTID rows
+ASSIGN
+INT_CONST 3
+';'
+OBJECTID columns
+ASSIGN
+INT_CONST 5
+';'
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+ASSIGN
+OBJECTID size
+';'
+'}'
+OBJECTID else
+IF
+OBJECTID size
+'='
+INT_CONST 16
+OBJECTID then
+'{'
+OBJECTID rows
+ASSIGN
+INT_CONST 4
+';'
+OBJECTID columns
+ASSIGN
+INT_CONST 4
+';'
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+ASSIGN
+OBJECTID size
+';'
+'}'
+OBJECTID else
+IF
+OBJECTID size
+'='
+INT_CONST 20
+OBJECTID then
+'{'
+OBJECTID rows
+ASSIGN
+INT_CONST 4
+';'
+OBJECTID columns
+ASSIGN
+INT_CONST 5
+';'
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+ASSIGN
+OBJECTID size
+';'
+'}'
+OBJECTID else
+IF
+OBJECTID size
+'='
+INT_CONST 21
+OBJECTID then
+'{'
+OBJECTID rows
+ASSIGN
+INT_CONST 3
+';'
+OBJECTID columns
+ASSIGN
+INT_CONST 7
+';'
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+ASSIGN
+OBJECTID size
+';'
+'}'
+OBJECTID else
+IF
+OBJECTID size
+'='
+INT_CONST 25
+OBJECTID then
+'{'
+OBJECTID rows
+ASSIGN
+INT_CONST 5
+';'
+OBJECTID columns
+ASSIGN
+INT_CONST 5
+';'
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+ASSIGN
+OBJECTID size
+';'
+'}'
+OBJECTID else
+IF
+OBJECTID size
+'='
+INT_CONST 28
+OBJECTID then
+'{'
+OBJECTID rows
+ASSIGN
+INT_CONST 7
+';'
+OBJECTID columns
+ASSIGN
+INT_CONST 4
+';'
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+ASSIGN
+OBJECTID size
+';'
+'}'
+OBJECTID else
+'-'
+'-'
+IF
+OBJECTID none
+OF
+OBJECTID the
+OBJECTID above
+OBJECTID fit
+','
+OBJECTID then
+OBJECTID just
+OBJECTID give
+'{'
+'-'
+'-'
+OBJECTID the
+OBJECTID configuration
+OF
+OBJECTID the
+OBJECTID most
+OBJECTID common
+OBJECTID board
+OBJECTID rows
+ASSIGN
+INT_CONST 5
+';'
+OBJECTID columns
+ASSIGN
+INT_CONST 5
+';'
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+ASSIGN
+OBJECTID size
+';'
+'}'
+FI
+FI
+FI
+FI
+FI
+FI
+';'
+OBJECTID self
+';'
+'}'
+')'
+'}'
+';'
+'}'
+';'
+CLASS
+TYPEID CellularAutomaton
+INHERITS
+TYPEID Board
+'{'
+OBJECTID population
+LEXER BUG - UNMATCHED: _
+OBJECTID map
+':'
+TYPEID String
+';'
+OBJECTID init
+'('
+OBJECTID map
+':'
+TYPEID String
+')'
+':'
+TYPEID SELF
+LEXER BUG - UNMATCHED: _
+TYPEID TYPE
+'{'
+'{'
+OBJECTID population
+LEXER BUG - UNMATCHED: _
+OBJECTID map
+ASSIGN
+OBJECTID map
+';'
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID init
+'('
+OBJECTID map
+')'
+';'
+OBJECTID self
+';'
+'}'
+'}'
+';'
+OBJECTID print
+'('
+')'
+':'
+TYPEID SELF
+LEXER BUG - UNMATCHED: _
+TYPEID TYPE
+'{'
+'('
+OBJECTID let
+OBJECTID i
+':'
+TYPEID Int
+ASSIGN
+INT_CONST 0
+IN
+'('
+OBJECTID let
+OBJECTID num
+':'
+TYPEID Int
+ASSIGN
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+IN
+'{'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\n"
+')'
+';'
+OBJECTID while
+OBJECTID i
+'<'
+OBJECTID num
+LOOP
+'{'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+OBJECTID population
+LEXER BUG - UNMATCHED: _
+OBJECTID map
+'.'
+OBJECTID substr
+'('
+OBJECTID i
+','
+OBJECTID columns
+')'
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\n"
+')'
+';'
+OBJECTID i
+ASSIGN
+OBJECTID i
+'+'
+OBJECTID columns
+';'
+'}'
+POOL
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\n"
+')'
+';'
+OBJECTID self
+';'
+'}'
+')'
+')'
+'}'
+';'
+OBJECTID num
+LEXER BUG - UNMATCHED: _
+OBJECTID cells
+'('
+')'
+':'
+TYPEID Int
+'{'
+OBJECTID population
+LEXER BUG - UNMATCHED: _
+OBJECTID map
+'.'
+OBJECTID length
+'('
+')'
+'}'
+';'
+OBJECTID cell
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID String
+'{'
+IF
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+'-'
+INT_CONST 1
+'<'
+OBJECTID position
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+OBJECTID population
+LEXER BUG - UNMATCHED: _
+OBJECTID map
+'.'
+OBJECTID substr
+'('
+OBJECTID position
+','
+INT_CONST 1
+')'
+FI
+'}'
+';'
+OBJECTID north
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID String
+'{'
+IF
+'('
+OBJECTID position
+'-'
+OBJECTID columns
+')'
+'<'
+INT_CONST 0
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+OBJECTID cell
+'('
+OBJECTID position
+'-'
+OBJECTID columns
+')'
+FI
+'}'
+';'
+OBJECTID south
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID String
+'{'
+IF
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+'<'
+'('
+OBJECTID position
+'+'
+OBJECTID columns
+')'
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+OBJECTID cell
+'('
+OBJECTID position
+'+'
+OBJECTID columns
+')'
+FI
+'}'
+';'
+OBJECTID east
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID String
+'{'
+IF
+'('
+'('
+'('
+OBJECTID position
+'+'
+INT_CONST 1
+')'
+'/'
+OBJECTID columns
+')'
+'*'
+OBJECTID columns
+')'
+'='
+'('
+OBJECTID position
+'+'
+INT_CONST 1
+')'
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+OBJECTID cell
+'('
+OBJECTID position
+'+'
+INT_CONST 1
+')'
+FI
+'}'
+';'
+OBJECTID west
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID String
+'{'
+IF
+OBJECTID position
+'='
+INT_CONST 0
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+IF
+'('
+'('
+OBJECTID position
+'/'
+OBJECTID columns
+')'
+'*'
+OBJECTID columns
+')'
+'='
+OBJECTID position
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+OBJECTID cell
+'('
+OBJECTID position
+'-'
+INT_CONST 1
+')'
+FI
+FI
+'}'
+';'
+OBJECTID northwest
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID String
+'{'
+IF
+'('
+OBJECTID position
+'-'
+OBJECTID columns
+')'
+'<'
+INT_CONST 0
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+IF
+'('
+'('
+OBJECTID position
+'/'
+OBJECTID columns
+')'
+'*'
+OBJECTID columns
+')'
+'='
+OBJECTID position
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+OBJECTID north
+'('
+OBJECTID position
+'-'
+INT_CONST 1
+')'
+FI
+FI
+'}'
+';'
+OBJECTID northeast
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID String
+'{'
+IF
+'('
+OBJECTID position
+'-'
+OBJECTID columns
+')'
+'<'
+INT_CONST 0
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+IF
+'('
+'('
+'('
+OBJECTID position
+'+'
+INT_CONST 1
+')'
+'/'
+OBJECTID columns
+')'
+'*'
+OBJECTID columns
+')'
+'='
+'('
+OBJECTID position
+'+'
+INT_CONST 1
+')'
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+OBJECTID north
+'('
+OBJECTID position
+'+'
+INT_CONST 1
+')'
+FI
+FI
+'}'
+';'
+OBJECTID southeast
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID String
+'{'
+IF
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+'<'
+'('
+OBJECTID position
+'+'
+OBJECTID columns
+')'
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+IF
+'('
+'('
+'('
+OBJECTID position
+'+'
+INT_CONST 1
+')'
+'/'
+OBJECTID columns
+')'
+'*'
+OBJECTID columns
+')'
+'='
+'('
+OBJECTID position
+'+'
+INT_CONST 1
+')'
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+OBJECTID south
+'('
+OBJECTID position
+'+'
+INT_CONST 1
+')'
+FI
+FI
+'}'
+';'
+OBJECTID southwest
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID String
+'{'
+IF
+OBJECTID board
+LEXER BUG - UNMATCHED: _
+OBJECTID size
+'<'
+'('
+OBJECTID position
+'+'
+OBJECTID columns
+')'
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+IF
+'('
+'('
+OBJECTID position
+'/'
+OBJECTID columns
+')'
+'*'
+OBJECTID columns
+')'
+'='
+OBJECTID position
+OBJECTID then
+STR_CONST " "
+OBJECTID else
+OBJECTID south
+'('
+OBJECTID position
+'-'
+INT_CONST 1
+')'
+FI
+FI
+'}'
+';'
+OBJECTID neighbors
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID Int
+'{'
+'{'
+IF
+OBJECTID north
+'('
+OBJECTID position
+')'
+'='
+STR_CONST "X"
+OBJECTID then
+INT_CONST 1
+OBJECTID else
+INT_CONST 0
+FI
+'+'
+IF
+OBJECTID south
+'('
+OBJECTID position
+')'
+'='
+STR_CONST "X"
+OBJECTID then
+INT_CONST 1
+OBJECTID else
+INT_CONST 0
+FI
+'+'
+IF
+OBJECTID east
+'('
+OBJECTID position
+')'
+'='
+STR_CONST "X"
+OBJECTID then
+INT_CONST 1
+OBJECTID else
+INT_CONST 0
+FI
+'+'
+IF
+OBJECTID west
+'('
+OBJECTID position
+')'
+'='
+STR_CONST "X"
+OBJECTID then
+INT_CONST 1
+OBJECTID else
+INT_CONST 0
+FI
+'+'
+IF
+OBJECTID northeast
+'('
+OBJECTID position
+')'
+'='
+STR_CONST "X"
+OBJECTID then
+INT_CONST 1
+OBJECTID else
+INT_CONST 0
+FI
+'+'
+IF
+OBJECTID northwest
+'('
+OBJECTID position
+')'
+'='
+STR_CONST "X"
+OBJECTID then
+INT_CONST 1
+OBJECTID else
+INT_CONST 0
+FI
+'+'
+IF
+OBJECTID southeast
+'('
+OBJECTID position
+')'
+'='
+STR_CONST "X"
+OBJECTID then
+INT_CONST 1
+OBJECTID else
+INT_CONST 0
+FI
+'+'
+IF
+OBJECTID southwest
+'('
+OBJECTID position
+')'
+'='
+STR_CONST "X"
+OBJECTID then
+INT_CONST 1
+OBJECTID else
+INT_CONST 0
+FI
+';'
+'}'
+'}'
+';'
+'('
+'*'
+TYPEID A
+OBJECTID cell
+OBJECTID will
+OBJECTID live
+IF
+INT_CONST 2
+OBJECTID or
+INT_CONST 3
+OF
+OBJECTID it
+LEXER BUG - UNMATCHED: '
+OBJECTID s
+OBJECTID neighbors
+OBJECTID are
+OBJECTID alive
+'.'
+TYPEID It
+OBJECTID dies
+OBJECTID otherwise
+'.'
+TYPEID A
+OBJECTID cell
+OBJECTID is
+OBJECTID born
+IF
+OBJECTID only
+INT_CONST 3
+OF
+OBJECTID it
+LEXER BUG - UNMATCHED: '
+OBJECTID s
+OBJECTID neighbors
+OBJECTID are
+OBJECTID alive
+'.'
+'*'
+')'
+OBJECTID cell
+LEXER BUG - UNMATCHED: _
+OBJECTID at
+LEXER BUG - UNMATCHED: _
+OBJECTID next
+LEXER BUG - UNMATCHED: _
+OBJECTID evolution
+'('
+OBJECTID position
+':'
+TYPEID Int
+')'
+':'
+TYPEID String
+'{'
+IF
+OBJECTID neighbors
+'('
+OBJECTID position
+')'
+'='
+INT_CONST 3
+OBJECTID then
+STR_CONST "X"
+OBJECTID else
+IF
+OBJECTID neighbors
+'('
+OBJECTID position
+')'
+'='
+INT_CONST 2
+OBJECTID then
+IF
+OBJECTID cell
+'('
+OBJECTID position
+')'
+'='
+STR_CONST "X"
+OBJECTID then
+STR_CONST "X"
+OBJECTID else
+STR_CONST "-"
+FI
+OBJECTID else
+STR_CONST "-"
+FI
+FI
+'}'
+';'
+OBJECTID evolve
+'('
+')'
+':'
+TYPEID SELF
+LEXER BUG - UNMATCHED: _
+TYPEID TYPE
+'{'
+'('
+OBJECTID let
+OBJECTID position
+':'
+TYPEID Int
+ASSIGN
+INT_CONST 0
+IN
+'('
+OBJECTID let
+OBJECTID num
+':'
+TYPEID Int
+ASSIGN
+OBJECTID num
+LEXER BUG - UNMATCHED: _
+OBJECTID cells
+'('
+')'
+IN
+'('
+OBJECTID let
+OBJECTID temp
+':'
+TYPEID String
+IN
+'{'
+OBJECTID while
+OBJECTID position
+'<'
+OBJECTID num
+LOOP
+'{'
+OBJECTID temp
+ASSIGN
+OBJECTID temp
+'.'
+OBJECTID concat
+'('
+OBJECTID cell
+LEXER BUG - UNMATCHED: _
+OBJECTID at
+LEXER BUG - UNMATCHED: _
+OBJECTID next
+LEXER BUG - UNMATCHED: _
+OBJECTID evolution
+'('
+OBJECTID position
+')'
+')'
+';'
+OBJECTID position
+ASSIGN
+OBJECTID position
+'+'
+INT_CONST 1
+';'
+'}'
+POOL
+';'
+OBJECTID population
+LEXER BUG - UNMATCHED: _
+OBJECTID map
+ASSIGN
+OBJECTID temp
+';'
+OBJECTID self
+';'
+'}'
+')'
+')'
+')'
+'}'
+';'
+'('
+'*'
+TYPEID This
+OBJECTID is
+OBJECTID where
+OBJECTID the
+OBJECTID background
+OBJECTID pattern
+OBJECTID is
+OBJECTID detremined
+OBJECTID by
+OBJECTID the
+OBJECTID user
+'.'
+TYPEID More
+OBJECTID patterns
+OBJECTID can
+OBJECTID be
+OBJECTID added
+OBJECTID as
+OBJECTID long
+OBJECTID as
+OBJECTID whoever
+OBJECTID adds
+OBJECTID keeps
+OBJECTID the
+OBJECTID board
+OBJECTID either
+INT_CONST 3
+OBJECTID x5
+','
+INT_CONST 4
+OBJECTID x5
+','
+INT_CONST 5
+OBJECTID x5
+','
+INT_CONST 3
+OBJECTID x7
+','
+INT_CONST 7
+OBJECTID x4
+','
+INT_CONST 4
+OBJECTID x4
+OBJECTID with
+OBJECTID the
+OBJECTID row
+OBJECTID first
+OBJECTID then
+OBJECTID column
+'.'
+'*'
+')'
+OBJECTID option
+'('
+')'
+':'
+TYPEID String
+'{'
+'{'
+'('
+OBJECTID let
+OBJECTID num
+':'
+TYPEID Int
+IN
+'{'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\nPlease chose a number:\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t1: A cross\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t2: A slash from the upper left to lower right\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t3: A slash from the upper right to lower left\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t4: An X\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t5: A greater than sign \\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t6: A less than sign\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t7: Two greater than signs\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t8: Two less than signs\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t9: A 'V'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t10: An inverse 'V'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t11: Numbers 9 and 10 combined\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t12: A full grid\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t13: A 'T'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t14: A plus '+'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t15: A 'W'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t16: An 'M'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t17: An 'E'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t18: A '3'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t19: An 'O'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t20: An '8'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\t21: An 'S'\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "Your choice => "
+')'
+';'
+OBJECTID num
+ASSIGN
+IN
+LEXER BUG - UNMATCHED: _
+OBJECTID int
+'('
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\n"
+')'
+';'
+IF
+OBJECTID num
+'='
+INT_CONST 1
+OBJECTID then
+STR_CONST " XX  XXXX XXXX  XX  "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 2
+OBJECTID then
+STR_CONST "    X   X   X   X   X    "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 3
+OBJECTID then
+STR_CONST "X     X     X     X     X"
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 4
+OBJECTID then
+STR_CONST "X   X X X   X   X X X   X"
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 5
+OBJECTID then
+STR_CONST "X     X     X   X   X    "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 6
+OBJECTID then
+STR_CONST "    X   X   X     X     X"
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 7
+OBJECTID then
+STR_CONST "X  X  X  XX  X      "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 8
+OBJECTID then
+STR_CONST " X  XX  X  X  X     "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 9
+OBJECTID then
+STR_CONST "X   X X X   X  "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 10
+OBJECTID then
+STR_CONST "  X   X X X   X"
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 11
+OBJECTID then
+STR_CONST "X X X X X X X X"
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 12
+OBJECTID then
+STR_CONST "XXXXXXXXXXXXXXXXXXXXXXXXX"
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 13
+OBJECTID then
+STR_CONST "XXXXX  X    X    X    X  "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 14
+OBJECTID then
+STR_CONST "  X    X  XXXXX  X    X  "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 15
+OBJECTID then
+STR_CONST "X     X X X X   X X  "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 16
+OBJECTID then
+STR_CONST "  X X   X X X X     X"
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 17
+OBJECTID then
+STR_CONST "XXXXX   X   XXXXX   X   XXXX"
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 18
+OBJECTID then
+STR_CONST "XXX    X   X  X    X   XXXX "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 19
+OBJECTID then
+STR_CONST " XX X  XX  X XX "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 20
+OBJECTID then
+STR_CONST " XX X  XX  X XX X  XX  X XX "
+OBJECTID else
+IF
+OBJECTID num
+'='
+INT_CONST 21
+OBJECTID then
+STR_CONST " XXXX   X    XX    X   XXXX "
+OBJECTID else
+STR_CONST "                         "
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+';'
+'}'
+')'
+';'
+'}'
+'}'
+';'
+OBJECTID prompt
+'('
+')'
+':'
+TYPEID Bool
+'{'
+'{'
+'('
+OBJECTID let
+OBJECTID ans
+':'
+TYPEID String
+IN
+'{'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "Would you like to continue with the next generation? \\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "Please use lowercase y or n for your answer [y]: "
+')'
+';'
+OBJECTID ans
+ASSIGN
+IN
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\n"
+')'
+';'
+IF
+OBJECTID ans
+'='
+STR_CONST "n"
+OBJECTID then
+BOOL_CONST false
+OBJECTID else
+BOOL_CONST true
+FI
+';'
+'}'
+')'
+';'
+'}'
+'}'
+';'
+OBJECTID prompt2
+'('
+')'
+':'
+TYPEID Bool
+'{'
+'('
+OBJECTID let
+OBJECTID ans
+':'
+TYPEID String
+IN
+'{'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "\\n\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "Would you like to choose a background pattern? \\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "Please use lowercase y or n for your answer [n]: "
+')'
+';'
+OBJECTID ans
+ASSIGN
+IN
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+')'
+';'
+IF
+OBJECTID ans
+'='
+STR_CONST "y"
+OBJECTID then
+BOOL_CONST true
+OBJECTID else
+BOOL_CONST false
+FI
+';'
+'}'
+')'
+'}'
+';'
+'}'
+';'
+CLASS
+TYPEID Main
+INHERITS
+TYPEID CellularAutomaton
+'{'
+OBJECTID cells
+':'
+TYPEID CellularAutomaton
+';'
+OBJECTID main
+'('
+')'
+':'
+TYPEID SELF
+LEXER BUG - UNMATCHED: _
+TYPEID TYPE
+'{'
+'{'
+'('
+OBJECTID let
+OBJECTID continue
+':'
+TYPEID Bool
+IN
+'('
+OBJECTID let
+OBJECTID choice
+':'
+TYPEID String
+IN
+'{'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "Welcome to the Game of Life.\\n"
+')'
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "There are many initial states to choose from. \\n"
+')'
+';'
+OBJECTID while
+OBJECTID prompt2
+'('
+')'
+LOOP
+'{'
+OBJECTID continue
+ASSIGN
+BOOL_CONST true
+';'
+OBJECTID choice
+ASSIGN
+OBJECTID option
+'('
+')'
+';'
+OBJECTID cells
+ASSIGN
+'('
+OBJECTID new
+TYPEID CellularAutomaton
+')'
+'.'
+OBJECTID init
+'('
+OBJECTID choice
+')'
+';'
+OBJECTID cells
+'.'
+OBJECTID print
+'('
+')'
+';'
+OBJECTID while
+OBJECTID continue
+LOOP
+IF
+OBJECTID prompt
+'('
+')'
+OBJECTID then
+'{'
+OBJECTID cells
+'.'
+OBJECTID evolve
+'('
+')'
+';'
+OBJECTID cells
+'.'
+OBJECTID print
+'('
+')'
+';'
+'}'
+OBJECTID else
+OBJECTID continue
+ASSIGN
+BOOL_CONST false
+FI
+POOL
+';'
+'}'
+POOL
+';'
+OBJECTID self
+';'
+'}'
+')'
+')'
+';'
+'}'
+'}'
+';'
+'}'
+';'

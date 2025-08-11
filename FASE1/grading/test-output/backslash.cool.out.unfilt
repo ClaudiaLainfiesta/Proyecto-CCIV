@@ -1,0 +1,19 @@
+#name "./backslash.cool"
+#1 STR_CONST "\\0\\1\\2\\\\0\\\\1\\\\2\\t\\f\\b\\n\\r\\a\\b\\c\\d\\e\\f\\g"
+#1 STR_CONST "\\"
+#1 OBJECTID this
+#1 OBJECTID is
+#1 OBJECTID still
+#1 OBJECTID inside
+#1 OBJECTID the
+#1 OBJECTID string
+#1 STR_CONST "\n\n"
+#1 TYPEID I
+LEXER BUG - UNMATCHED: '
+#1 OBJECTID m
+#1 OBJECTID about
+#1 OBJECTID to
+#1 OBJECTID excape
+#1 OBJECTID a
+#1 OBJECTID newline
+LEXER BUG - UNMATCHED: \

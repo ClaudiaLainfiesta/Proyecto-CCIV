@@ -1,0 +1,23 @@
+#name "./s33.test.cool"
+#1 '('
+#1 '*'
+#1 OBJECTID test
+#1 OBJECTID an
+#1 OBJECTID unterminated
+#1 OBJECTID comment
+#1 '*'
+#1 ')'
+#1 OBJECTID before
+LEXER BUG - UNMATCHED: _
+#1 OBJECTID the
+LEXER BUG - UNMATCHED: _
+#1 OBJECTID comment
+#1 '('
+#1 '*'
+#1 OBJECTID this
+#1 '*'
+#1 OBJECTID won
+LEXER BUG - UNMATCHED: '
+#1 OBJECTID t
+#1 '*'
+#1 OBJECTID end

@@ -1,0 +1,22 @@
+3,4c3,4
+< ELSE
+< ESAC
+---
+> TYPEID ElSe
+> OBJECTID eSaC
+11,12c11,12
+< ISVOID
+< LET
+---
+> TYPEID IsvoiD
+> OBJECTID lEt
+14c14
+< NEW
+---
+> OBJECTID new
+18,19c18,19
+< THEN
+< WHILE
+---
+> TYPEID ThEn
+> OBJECTID whIle

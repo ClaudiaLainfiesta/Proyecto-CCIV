@@ -1,0 +1,14 @@
+1,3c1,9
+< LONGERROR
+< OBJECTID d
+< LONGERROR
+---
+> '('
+> '*'
+> OBJECTID illegal
+> ':'
+> OBJECTID unescaped
+> OBJECTID newline
+> '*'
+> ')'
+> STR_CONST "c\nd"

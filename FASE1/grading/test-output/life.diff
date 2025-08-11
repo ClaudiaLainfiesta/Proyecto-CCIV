@@ -1,0 +1,1587 @@
+0a1,402
+> '('
+> '*'
+> TYPEID The
+> TYPEID Game
+> OF
+> TYPEID Life
+> TYPEID Tendo
+> TYPEID Kayiira
+> ','
+> TYPEID Summer
+> LEXER BUG - UNMATCHED: '
+> INT_CONST 95
+> TYPEID With
+> OBJECTID code
+> OBJECTID taken
+> OBJECTID from
+> '/'
+> OBJECTID private
+> '/'
+> OBJECTID cool
+> '/'
+> CLASS
+> '/'
+> OBJECTID examples
+> '/'
+> OBJECTID cells
+> '.'
+> OBJECTID cl
+> TYPEID This
+> OBJECTID introduction
+> OBJECTID was
+> OBJECTID taken
+> OBJECTID off
+> OBJECTID the
+> OBJECTID internet
+> '.'
+> TYPEID It
+> OBJECTID gives
+> OBJECTID a
+> OBJECTID brief
+> OBJECTID description
+> OF
+> OBJECTID the
+> TYPEID Game
+> OF
+> TYPEID Life
+> '.'
+> TYPEID It
+> OBJECTID also
+> OBJECTID gives
+> OBJECTID the
+> OBJECTID rules
+> OBJECTID by
+> OBJECTID which
+> OBJECTID this
+> OBJECTID particular
+> OBJECTID game
+> OBJECTID follows
+> '.'
+> TYPEID Introduction
+> TYPEID John
+> TYPEID Conway
+> LEXER BUG - UNMATCHED: '
+> OBJECTID s
+> TYPEID Game
+> OF
+> TYPEID Life
+> OBJECTID is
+> OBJECTID a
+> OBJECTID mathematical
+> OBJECTID amusement
+> ','
+> OBJECTID but
+> OBJECTID it
+> OBJECTID is
+> OBJECTID also
+> OBJECTID much
+> OBJECTID more
+> ':'
+> OBJECTID an
+> OBJECTID insight
+> OBJECTID into
+> OBJECTID how
+> OBJECTID a
+> OBJECTID system
+> OF
+> OBJECTID simple
+> OBJECTID cellualar
+> OBJECTID automata
+> OBJECTID can
+> OBJECTID create
+> OBJECTID complex
+> ','
+> OBJECTID odd
+> ','
+> OBJECTID and
+> OBJECTID often
+> OBJECTID aesthetically
+> OBJECTID pleasing
+> OBJECTID patterns
+> '.'
+> TYPEID It
+> OBJECTID is
+> OBJECTID played
+> OBJECTID on
+> OBJECTID a
+> OBJECTID cartesian
+> OBJECTID grid
+> OF
+> OBJECTID cells
+> OBJECTID which
+> OBJECTID are
+> OBJECTID either
+> LEXER BUG - UNMATCHED: '
+> OBJECTID on
+> LEXER BUG - UNMATCHED: '
+> OBJECTID or
+> LEXER BUG - UNMATCHED: '
+> OBJECTID off
+> LEXER BUG - UNMATCHED: '
+> TYPEID The
+> OBJECTID game
+> OBJECTID gets
+> OBJECTID it
+> LEXER BUG - UNMATCHED: '
+> OBJECTID s
+> OBJECTID name
+> OBJECTID from
+> OBJECTID the
+> OBJECTID similarity
+> OBJECTID between
+> OBJECTID the
+> OBJECTID behaviour
+> OF
+> OBJECTID these
+> OBJECTID cells
+> OBJECTID and
+> OBJECTID the
+> OBJECTID behaviour
+> OF
+> OBJECTID living
+> OBJECTID organisms
+> '.'
+> TYPEID The
+> TYPEID Rules
+> TYPEID The
+> OBJECTID playfield
+> OBJECTID is
+> OBJECTID a
+> OBJECTID cartesian
+> OBJECTID grid
+> OF
+> OBJECTID arbitrary
+> OBJECTID size
+> '.'
+> TYPEID Each
+> OBJECTID cell
+> IN
+> OBJECTID this
+> OBJECTID grid
+> OBJECTID can
+> OBJECTID be
+> IN
+> OBJECTID an
+> LEXER BUG - UNMATCHED: '
+> OBJECTID on
+> LEXER BUG - UNMATCHED: '
+> OBJECTID state
+> OBJECTID or
+> OBJECTID an
+> LEXER BUG - UNMATCHED: '
+> OBJECTID off
+> LEXER BUG - UNMATCHED: '
+> OBJECTID state
+> '.'
+> TYPEID On
+> OBJECTID each
+> LEXER BUG - UNMATCHED: '
+> OBJECTID turn
+> LEXER BUG - UNMATCHED: '
+> '('
+> OBJECTID called
+> OBJECTID a
+> OBJECTID generation
+> ','
+> ')'
+> OBJECTID the
+> OBJECTID state
+> OF
+> OBJECTID each
+> OBJECTID cell
+> OBJECTID changes
+> OBJECTID simultaneously
+> OBJECTID depending
+> OBJECTID on
+> OBJECTID it
+> LEXER BUG - UNMATCHED: '
+> OBJECTID s
+> OBJECTID state
+> OBJECTID and
+> OBJECTID the
+> OBJECTID state
+> OF
+> OBJECTID all
+> OBJECTID cells
+> OBJECTID adjacent
+> OBJECTID to
+> OBJECTID it
+> '.'
+> TYPEID For
+> LEXER BUG - UNMATCHED: '
+> OBJECTID on
+> LEXER BUG - UNMATCHED: '
+> OBJECTID cells
+> ','
+> IF
+> OBJECTID the
+> OBJECTID cell
+> OBJECTID has
+> INT_CONST 0
+> OBJECTID or
+> INT_CONST 1
+> OBJECTID neighbours
+> OBJECTID which
+> OBJECTID are
+> LEXER BUG - UNMATCHED: '
+> OBJECTID on
+> LEXER BUG - UNMATCHED: '
+> ','
+> OBJECTID the
+> OBJECTID cell
+> OBJECTID turns
+> LEXER BUG - UNMATCHED: '
+> OBJECTID off
+> LEXER BUG - UNMATCHED: '
+> '.'
+> '('
+> LEXER BUG - UNMATCHED: '
+> OBJECTID dies
+> OF
+> OBJECTID loneliness
+> LEXER BUG - UNMATCHED: '
+> ')'
+> IF
+> OBJECTID the
+> OBJECTID cell
+> OBJECTID has
+> INT_CONST 2
+> OBJECTID or
+> INT_CONST 3
+> OBJECTID neighbours
+> OBJECTID which
+> OBJECTID are
+> LEXER BUG - UNMATCHED: '
+> OBJECTID on
+> LEXER BUG - UNMATCHED: '
+> ','
+> OBJECTID the
+> OBJECTID cell
+> OBJECTID stays
+> LEXER BUG - UNMATCHED: '
+> OBJECTID on
+> LEXER BUG - UNMATCHED: '
+> '.'
+> '('
+> OBJECTID nothing
+> OBJECTID happens
+> OBJECTID to
+> OBJECTID that
+> OBJECTID cell
+> ')'
+> IF
+> OBJECTID the
+> OBJECTID cell
+> OBJECTID has
+> INT_CONST 4
+> ','
+> INT_CONST 5
+> ','
+> INT_CONST 6
+> ','
+> INT_CONST 7
+> ','
+> INT_CONST 8
+> ','
+> OBJECTID or
+> INT_CONST 9
+> OBJECTID neighbours
+> OBJECTID which
+> OBJECTID are
+> LEXER BUG - UNMATCHED: '
+> OBJECTID on
+> LEXER BUG - UNMATCHED: '
+> ','
+> OBJECTID the
+> OBJECTID cell
+> OBJECTID turns
+> LEXER BUG - UNMATCHED: '
+> OBJECTID off
+> LEXER BUG - UNMATCHED: '
+> '.'
+> '('
+> LEXER BUG - UNMATCHED: '
+> OBJECTID dies
+> OF
+> OBJECTID overcrowding
+> LEXER BUG - UNMATCHED: '
+> ')'
+> TYPEID For
+> LEXER BUG - UNMATCHED: '
+> OBJECTID off
+> LEXER BUG - UNMATCHED: '
+> OBJECTID cells
+> ','
+> IF
+> OBJECTID the
+> OBJECTID cell
+> OBJECTID has
+> INT_CONST 0
+> ','
+> INT_CONST 1
+> ','
+> INT_CONST 2
+> ','
+> INT_CONST 4
+> ','
+> INT_CONST 5
+> ','
+> INT_CONST 6
+> ','
+> INT_CONST 7
+> ','
+> INT_CONST 8
+> ','
+> OBJECTID or
+> INT_CONST 9
+> OBJECTID neighbours
+> OBJECTID which
+> OBJECTID are
+> LEXER BUG - UNMATCHED: '
+> OBJECTID on
+> LEXER BUG - UNMATCHED: '
+> ','
+> OBJECTID the
+> OBJECTID cell
+> OBJECTID stays
+> LEXER BUG - UNMATCHED: '
+> OBJECTID off
+> LEXER BUG - UNMATCHED: '
+> '.'
+> '('
+> OBJECTID nothing
+> OBJECTID happens
+> OBJECTID to
+> OBJECTID that
+> OBJECTID cell
+> ')'
+> IF
+> OBJECTID the
+> OBJECTID cell
+> OBJECTID has
+> INT_CONST 3
+> OBJECTID neighbours
+> OBJECTID which
+> OBJECTID are
+> LEXER BUG - UNMATCHED: '
+> OBJECTID on
+> LEXER BUG - UNMATCHED: '
+> ','
+> OBJECTID the
+> OBJECTID cell
+> OBJECTID turns
+> LEXER BUG - UNMATCHED: '
+> OBJECTID on
+> LEXER BUG - UNMATCHED: '
+> '.'
+> '('
+> INT_CONST 3
+> OBJECTID neighbouring
+> LEXER BUG - UNMATCHED: '
+> OBJECTID alive
+> LEXER BUG - UNMATCHED: '
+> OBJECTID cells
+> LEXER BUG - UNMATCHED: '
+> OBJECTID give
+> OBJECTID birth
+> LEXER BUG - UNMATCHED: '
+> OBJECTID to
+> OBJECTID a
+> OBJECTID fourth
+> '.'
+> ')'
+> TYPEID Repeat
+> OBJECTID for
+> OBJECTID as
+> OBJECTID many
+> OBJECTID generations
+> OBJECTID as
+> OBJECTID desired
+> '.'
+> '*'
+> ')'
+14c416,418
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+18c422,426
+< OBJECTID size_of_board
+---
+> OBJECTID size
+> LEXER BUG - UNMATCHED: _
+> OF
+> LEXER BUG - UNMATCHED: _
+> OBJECTID board
+34c442,444
+< OBJECTID board_init
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID init
+41c451,453
+< TYPEID SELF_TYPE
+---
+> TYPEID SELF
+> LEXER BUG - UNMATCHED: _
+> TYPEID TYPE
+44c456
+< LET
+---
+> OBJECTID let
+49c461,465
+< OBJECTID size_of_board
+---
+> OBJECTID size
+> LEXER BUG - UNMATCHED: _
+> OF
+> LEXER BUG - UNMATCHED: _
+> OBJECTID board
+59c475
+< THEN
+---
+> OBJECTID then
+69c485,487
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+74c492
+< ELSE
+---
+> OBJECTID else
+79c497
+< THEN
+---
+> OBJECTID then
+89c507,509
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+94c514
+< ELSE
+---
+> OBJECTID else
+99c519
+< THEN
+---
+> OBJECTID then
+109c529,531
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+114c536
+< ELSE
+---
+> OBJECTID else
+119c541
+< THEN
+---
+> OBJECTID then
+129c551,553
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+134c558
+< ELSE
+---
+> OBJECTID else
+139c563
+< THEN
+---
+> OBJECTID then
+149c573,575
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+154c580
+< ELSE
+---
+> OBJECTID else
+159c585
+< THEN
+---
+> OBJECTID then
+169c595,597
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+174c602,614
+< ELSE
+---
+> OBJECTID else
+> '-'
+> '-'
+> IF
+> OBJECTID none
+> OF
+> OBJECTID the
+> OBJECTID above
+> OBJECTID fit
+> ','
+> OBJECTID then
+> OBJECTID just
+> OBJECTID give
+175a616,624
+> '-'
+> '-'
+> OBJECTID the
+> OBJECTID configuration
+> OF
+> OBJECTID the
+> OBJECTID most
+> OBJECTID common
+> OBJECTID board
+184c633,635
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+209c660,662
+< OBJECTID population_map
+---
+> OBJECTID population
+> LEXER BUG - UNMATCHED: _
+> OBJECTID map
+220c673,675
+< TYPEID SELF_TYPE
+---
+> TYPEID SELF
+> LEXER BUG - UNMATCHED: _
+> TYPEID TYPE
+223c678,680
+< OBJECTID population_map
+---
+> OBJECTID population
+> LEXER BUG - UNMATCHED: _
+> OBJECTID map
+227c684,686
+< OBJECTID board_init
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID init
+241c700,702
+< TYPEID SELF_TYPE
+---
+> TYPEID SELF
+> LEXER BUG - UNMATCHED: _
+> TYPEID TYPE
+244c705
+< LET
+---
+> OBJECTID let
+252c713
+< LET
+---
+> OBJECTID let
+257c718,720
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+260c723,725
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+262c727
+< STR_CONST "\n"
+---
+> STR_CONST "\\n"
+265c730
+< WHILE
+---
+> OBJECTID while
+271c736,738
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+273c740,742
+< OBJECTID population_map
+---
+> OBJECTID population
+> LEXER BUG - UNMATCHED: _
+> OBJECTID map
+283c752,754
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+285c756
+< STR_CONST "\n"
+---
+> STR_CONST "\\n"
+297c768,770
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+299c772
+< STR_CONST "\n"
+---
+> STR_CONST "\\n"
+309c782,784
+< OBJECTID num_cells
+---
+> OBJECTID num
+> LEXER BUG - UNMATCHED: _
+> OBJECTID cells
+315c790,792
+< OBJECTID population_map
+---
+> OBJECTID population
+> LEXER BUG - UNMATCHED: _
+> OBJECTID map
+332c809,811
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+337c816
+< THEN
+---
+> OBJECTID then
+339,340c818,821
+< ELSE
+< OBJECTID population_map
+---
+> OBJECTID else
+> OBJECTID population
+> LEXER BUG - UNMATCHED: _
+> OBJECTID map
+368c849
+< THEN
+---
+> OBJECTID then
+370c851
+< ELSE
+---
+> OBJECTID else
+390c871,873
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+397c880
+< THEN
+---
+> OBJECTID then
+399c882
+< ELSE
+---
+> OBJECTID else
+438c921
+< THEN
+---
+> OBJECTID then
+440c923
+< ELSE
+---
+> OBJECTID else
+463c946
+< THEN
+---
+> OBJECTID then
+465c948
+< ELSE
+---
+> OBJECTID else
+478c961
+< THEN
+---
+> OBJECTID then
+480c963
+< ELSE
+---
+> OBJECTID else
+508c991
+< THEN
+---
+> OBJECTID then
+510c993
+< ELSE
+---
+> OBJECTID else
+523c1006
+< THEN
+---
+> OBJECTID then
+525c1008
+< ELSE
+---
+> OBJECTID else
+553c1036
+< THEN
+---
+> OBJECTID then
+555c1038
+< ELSE
+---
+> OBJECTID else
+576c1059
+< THEN
+---
+> OBJECTID then
+578c1061
+< ELSE
+---
+> OBJECTID else
+599c1082,1084
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+606c1091
+< THEN
+---
+> OBJECTID then
+608c1093
+< ELSE
+---
+> OBJECTID else
+629c1114
+< THEN
+---
+> OBJECTID then
+631c1116
+< ELSE
+---
+> OBJECTID else
+652c1137,1139
+< OBJECTID board_size
+---
+> OBJECTID board
+> LEXER BUG - UNMATCHED: _
+> OBJECTID size
+659c1146
+< THEN
+---
+> OBJECTID then
+661c1148
+< ELSE
+---
+> OBJECTID else
+674c1161
+< THEN
+---
+> OBJECTID then
+676c1163
+< ELSE
+---
+> OBJECTID else
+704c1191
+< THEN
+---
+> OBJECTID then
+706c1193
+< ELSE
+---
+> OBJECTID else
+717c1204
+< THEN
+---
+> OBJECTID then
+719c1206
+< ELSE
+---
+> OBJECTID else
+730c1217
+< THEN
+---
+> OBJECTID then
+732c1219
+< ELSE
+---
+> OBJECTID else
+743c1230
+< THEN
+---
+> OBJECTID then
+745c1232
+< ELSE
+---
+> OBJECTID else
+756c1243
+< THEN
+---
+> OBJECTID then
+758c1245
+< ELSE
+---
+> OBJECTID else
+769c1256
+< THEN
+---
+> OBJECTID then
+771c1258
+< ELSE
+---
+> OBJECTID else
+782c1269
+< THEN
+---
+> OBJECTID then
+784c1271
+< ELSE
+---
+> OBJECTID else
+795c1282
+< THEN
+---
+> OBJECTID then
+797c1284
+< ELSE
+---
+> OBJECTID else
+804c1291,1336
+< OBJECTID cell_at_next_evolution
+---
+> '('
+> '*'
+> TYPEID A
+> OBJECTID cell
+> OBJECTID will
+> OBJECTID live
+> IF
+> INT_CONST 2
+> OBJECTID or
+> INT_CONST 3
+> OF
+> OBJECTID it
+> LEXER BUG - UNMATCHED: '
+> OBJECTID s
+> OBJECTID neighbors
+> OBJECTID are
+> OBJECTID alive
+> '.'
+> TYPEID It
+> OBJECTID dies
+> OBJECTID otherwise
+> '.'
+> TYPEID A
+> OBJECTID cell
+> OBJECTID is
+> OBJECTID born
+> IF
+> OBJECTID only
+> INT_CONST 3
+> OF
+> OBJECTID it
+> LEXER BUG - UNMATCHED: '
+> OBJECTID s
+> OBJECTID neighbors
+> OBJECTID are
+> OBJECTID alive
+> '.'
+> '*'
+> ')'
+> OBJECTID cell
+> LEXER BUG - UNMATCHED: _
+> OBJECTID at
+> LEXER BUG - UNMATCHED: _
+> OBJECTID next
+> LEXER BUG - UNMATCHED: _
+> OBJECTID evolution
+820c1352
+< THEN
+---
+> OBJECTID then
+822c1354
+< ELSE
+---
+> OBJECTID else
+830c1362
+< THEN
+---
+> OBJECTID then
+838c1370
+< THEN
+---
+> OBJECTID then
+840c1372
+< ELSE
+---
+> OBJECTID else
+843c1375
+< ELSE
+---
+> OBJECTID else
+853c1385,1387
+< TYPEID SELF_TYPE
+---
+> TYPEID SELF
+> LEXER BUG - UNMATCHED: _
+> TYPEID TYPE
+856c1390
+< LET
+---
+> OBJECTID let
+864c1398
+< LET
+---
+> OBJECTID let
+869c1403,1405
+< OBJECTID num_cells
+---
+> OBJECTID num
+> LEXER BUG - UNMATCHED: _
+> OBJECTID cells
+874c1410
+< LET
+---
+> OBJECTID let
+880c1416
+< WHILE
+---
+> OBJECTID while
+892c1428,1434
+< OBJECTID cell_at_next_evolution
+---
+> OBJECTID cell
+> LEXER BUG - UNMATCHED: _
+> OBJECTID at
+> LEXER BUG - UNMATCHED: _
+> OBJECTID next
+> LEXER BUG - UNMATCHED: _
+> OBJECTID evolution
+907c1449,1451
+< OBJECTID population_map
+---
+> OBJECTID population
+> LEXER BUG - UNMATCHED: _
+> OBJECTID map
+918a1463,1516
+> '('
+> '*'
+> TYPEID This
+> OBJECTID is
+> OBJECTID where
+> OBJECTID the
+> OBJECTID background
+> OBJECTID pattern
+> OBJECTID is
+> OBJECTID detremined
+> OBJECTID by
+> OBJECTID the
+> OBJECTID user
+> '.'
+> TYPEID More
+> OBJECTID patterns
+> OBJECTID can
+> OBJECTID be
+> OBJECTID added
+> OBJECTID as
+> OBJECTID long
+> OBJECTID as
+> OBJECTID whoever
+> OBJECTID adds
+> OBJECTID keeps
+> OBJECTID the
+> OBJECTID board
+> OBJECTID either
+> INT_CONST 3
+> OBJECTID x5
+> ','
+> INT_CONST 4
+> OBJECTID x5
+> ','
+> INT_CONST 5
+> OBJECTID x5
+> ','
+> INT_CONST 3
+> OBJECTID x7
+> ','
+> INT_CONST 7
+> OBJECTID x4
+> ','
+> INT_CONST 4
+> OBJECTID x4
+> OBJECTID with
+> OBJECTID the
+> OBJECTID row
+> OBJECTID first
+> OBJECTID then
+> OBJECTID column
+> '.'
+> '*'
+> ')'
+927c1525
+< LET
+---
+> OBJECTID let
+933c1531,1533
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+935c1535
+< STR_CONST "\nPlease chose a number:\n"
+---
+> STR_CONST "\\nPlease chose a number:\\n"
+938c1538,1540
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+940c1542
+< STR_CONST "\t1: A cross\n"
+---
+> STR_CONST "\\t1: A cross\\n"
+943c1545,1547
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+945c1549
+< STR_CONST "\t2: A slash from the upper left to lower right\n"
+---
+> STR_CONST "\\t2: A slash from the upper left to lower right\\n"
+948c1552,1554
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+950c1556
+< STR_CONST "\t3: A slash from the upper right to lower left\n"
+---
+> STR_CONST "\\t3: A slash from the upper right to lower left\\n"
+953c1559,1561
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+955c1563
+< STR_CONST "\t4: An X\n"
+---
+> STR_CONST "\\t4: An X\\n"
+958c1566,1568
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+960c1570
+< STR_CONST "\t5: A greater than sign \n"
+---
+> STR_CONST "\\t5: A greater than sign \\n"
+963c1573,1575
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+965c1577
+< STR_CONST "\t6: A less than sign\n"
+---
+> STR_CONST "\\t6: A less than sign\\n"
+968c1580,1582
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+970c1584
+< STR_CONST "\t7: Two greater than signs\n"
+---
+> STR_CONST "\\t7: Two greater than signs\\n"
+973c1587,1589
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+975c1591
+< STR_CONST "\t8: Two less than signs\n"
+---
+> STR_CONST "\\t8: Two less than signs\\n"
+978c1594,1596
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+980c1598
+< STR_CONST "\t9: A 'V'\n"
+---
+> STR_CONST "\\t9: A 'V'\\n"
+983c1601,1603
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+985c1605
+< STR_CONST "\t10: An inverse 'V'\n"
+---
+> STR_CONST "\\t10: An inverse 'V'\\n"
+988c1608,1610
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+990c1612
+< STR_CONST "\t11: Numbers 9 and 10 combined\n"
+---
+> STR_CONST "\\t11: Numbers 9 and 10 combined\\n"
+993c1615,1617
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+995c1619
+< STR_CONST "\t12: A full grid\n"
+---
+> STR_CONST "\\t12: A full grid\\n"
+998c1622,1624
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1000c1626
+< STR_CONST "\t13: A 'T'\n"
+---
+> STR_CONST "\\t13: A 'T'\\n"
+1003c1629,1631
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1005c1633
+< STR_CONST "\t14: A plus '+'\n"
+---
+> STR_CONST "\\t14: A plus '+'\\n"
+1008c1636,1638
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1010c1640
+< STR_CONST "\t15: A 'W'\n"
+---
+> STR_CONST "\\t15: A 'W'\\n"
+1013c1643,1645
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1015c1647
+< STR_CONST "\t16: An 'M'\n"
+---
+> STR_CONST "\\t16: An 'M'\\n"
+1018c1650,1652
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1020c1654
+< STR_CONST "\t17: An 'E'\n"
+---
+> STR_CONST "\\t17: An 'E'\\n"
+1023c1657,1659
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1025c1661
+< STR_CONST "\t18: A '3'\n"
+---
+> STR_CONST "\\t18: A '3'\\n"
+1028c1664,1666
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1030c1668
+< STR_CONST "\t19: An 'O'\n"
+---
+> STR_CONST "\\t19: An 'O'\\n"
+1033c1671,1673
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1035c1675
+< STR_CONST "\t20: An '8'\n"
+---
+> STR_CONST "\\t20: An '8'\\n"
+1038c1678,1680
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1040c1682
+< STR_CONST "\t21: An 'S'\n"
+---
+> STR_CONST "\\t21: An 'S'\\n"
+1043c1685,1687
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1050c1694,1696
+< OBJECTID in_int
+---
+> IN
+> LEXER BUG - UNMATCHED: _
+> OBJECTID int
+1054c1700,1702
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1056c1704
+< STR_CONST "\n"
+---
+> STR_CONST "\\n"
+1063c1711
+< THEN
+---
+> OBJECTID then
+1065c1713
+< ELSE
+---
+> OBJECTID else
+1070c1718
+< THEN
+---
+> OBJECTID then
+1072c1720
+< ELSE
+---
+> OBJECTID else
+1077c1725
+< THEN
+---
+> OBJECTID then
+1079c1727
+< ELSE
+---
+> OBJECTID else
+1084c1732
+< THEN
+---
+> OBJECTID then
+1086c1734
+< ELSE
+---
+> OBJECTID else
+1091c1739
+< THEN
+---
+> OBJECTID then
+1093c1741
+< ELSE
+---
+> OBJECTID else
+1098c1746
+< THEN
+---
+> OBJECTID then
+1100c1748
+< ELSE
+---
+> OBJECTID else
+1105c1753
+< THEN
+---
+> OBJECTID then
+1107c1755
+< ELSE
+---
+> OBJECTID else
+1112c1760
+< THEN
+---
+> OBJECTID then
+1114c1762
+< ELSE
+---
+> OBJECTID else
+1119c1767
+< THEN
+---
+> OBJECTID then
+1121c1769
+< ELSE
+---
+> OBJECTID else
+1126c1774
+< THEN
+---
+> OBJECTID then
+1128c1776
+< ELSE
+---
+> OBJECTID else
+1133c1781
+< THEN
+---
+> OBJECTID then
+1135c1783
+< ELSE
+---
+> OBJECTID else
+1140c1788
+< THEN
+---
+> OBJECTID then
+1142c1790
+< ELSE
+---
+> OBJECTID else
+1147c1795
+< THEN
+---
+> OBJECTID then
+1149c1797
+< ELSE
+---
+> OBJECTID else
+1154c1802
+< THEN
+---
+> OBJECTID then
+1156c1804
+< ELSE
+---
+> OBJECTID else
+1161c1809
+< THEN
+---
+> OBJECTID then
+1163c1811
+< ELSE
+---
+> OBJECTID else
+1168c1816
+< THEN
+---
+> OBJECTID then
+1170c1818
+< ELSE
+---
+> OBJECTID else
+1175c1823
+< THEN
+---
+> OBJECTID then
+1177c1825
+< ELSE
+---
+> OBJECTID else
+1182c1830
+< THEN
+---
+> OBJECTID then
+1184c1832
+< ELSE
+---
+> OBJECTID else
+1189c1837
+< THEN
+---
+> OBJECTID then
+1191c1839
+< ELSE
+---
+> OBJECTID else
+1196c1844
+< THEN
+---
+> OBJECTID then
+1198c1846
+< ELSE
+---
+> OBJECTID else
+1203c1851
+< THEN
+---
+> OBJECTID then
+1205c1853
+< ELSE
+---
+> OBJECTID else
+1243c1891
+< LET
+---
+> OBJECTID let
+1249c1897,1899
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1251c1901
+< STR_CONST "Would you like to continue with the next generation? \n"
+---
+> STR_CONST "Would you like to continue with the next generation? \\n"
+1254c1904,1906
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1261c1913,1915
+< OBJECTID in_string
+---
+> IN
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1265c1919,1921
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1267c1923
+< STR_CONST "\n"
+---
+> STR_CONST "\\n"
+1274c1930
+< THEN
+---
+> OBJECTID then
+1276c1932
+< ELSE
+---
+> OBJECTID else
+1293c1949
+< LET
+---
+> OBJECTID let
+1299c1955,1957
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1301c1959
+< STR_CONST "\n\n"
+---
+> STR_CONST "\\n\\n"
+1304c1962,1964
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1306c1966
+< STR_CONST "Would you like to choose a background pattern? \n"
+---
+> STR_CONST "Would you like to choose a background pattern? \\n"
+1309c1969,1971
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1316c1978,1980
+< OBJECTID in_string
+---
+> IN
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1324c1988
+< THEN
+---
+> OBJECTID then
+1326c1990
+< ELSE
+---
+> OBJECTID else
+1349c2013,2015
+< TYPEID SELF_TYPE
+---
+> TYPEID SELF
+> LEXER BUG - UNMATCHED: _
+> TYPEID TYPE
+1353c2019
+< LET
+---
+> OBJECTID let
+1359c2025
+< LET
+---
+> OBJECTID let
+1365c2031,2033
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1367c2035
+< STR_CONST "Welcome to the Game of Life.\n"
+---
+> STR_CONST "Welcome to the Game of Life.\\n"
+1370c2038,2040
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+1372c2042
+< STR_CONST "There are many initial states to choose from. \n"
+---
+> STR_CONST "There are many initial states to choose from. \\n"
+1375c2045
+< WHILE
+---
+> OBJECTID while
+1394c2064
+< NEW
+---
+> OBJECTID new
+1409c2079
+< WHILE
+---
+> OBJECTID while
+1416c2086
+< THEN
+---
+> OBJECTID then
+1431c2101
+< ELSE
+---
+> OBJECTID else

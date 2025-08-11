@@ -1,0 +1,407 @@
+#name "./longcomment.cool"
+#1 TYPEID Comment
+#1 OBJECTID test
+#1 '('
+#1 '*'
+#1 TYPEID Comment
+#1 OBJECTID test
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 TYPEID Comment
+#1 OBJECTID test
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 TYPEID Comment
+#1 '('
+#1 '*'
+#1 OBJECTID test
+#1 '*'
+#1 ')'
+#1 TYPEID Comment
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 TYPEID Comment
+#1 OBJECTID test
+#1 '('
+#1 '*'
+#1 OBJECTID comment
+#1 OBJECTID test
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+LEXER BUG - UNMATCHED: \
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '-'
+#1 '-'
+#1 OBJECTID single
+#1 OBJECTID line
+#1 OBJECTID comments
+#1 '-'
+#1 '-'
+LEXER BUG - UNMATCHED: $
+LEXER BUG - UNMATCHED: #
+LEXER BUG - UNMATCHED: %
+LEXER BUG - UNMATCHED: ^
+LEXER BUG - UNMATCHED: ^
+LEXER BUG - UNMATCHED: $
+LEXER BUG - UNMATCHED: %
+LEXER BUG - UNMATCHED: &
+LEXER BUG - UNMATCHED: %
+LEXER BUG - UNMATCHED: ^
+LEXER BUG - UNMATCHED: &
+LEXER BUG - UNMATCHED: %
+LEXER BUG - UNMATCHED: &
+LEXER BUG - UNMATCHED: %
+LEXER BUG - UNMATCHED: #
+#1 '*'
+LEXER BUG - UNMATCHED: &
+#1 '*'
+LEXER BUG - UNMATCHED: $
+LEXER BUG - UNMATCHED: ^
+#1 '*'
+LEXER BUG - UNMATCHED: %
+LEXER BUG - UNMATCHED: >
+#1 TYPEID G
+LEXER BUG - UNMATCHED: %
+LEXER BUG - UNMATCHED: >
+#1 TYPEID GH
+LEXER BUG - UNMATCHED: >
+LEXER BUG - UNMATCHED: %
+#1 TYPEID TH
+LEXER BUG - UNMATCHED: %
+LEXER BUG - UNMATCHED: >
+LEXER BUG - UNMATCHED: ^
+#1 '*'
+LEXER BUG - UNMATCHED: ^
+LEXER BUG - UNMATCHED: $
+LEXER BUG - UNMATCHED: $
+#1 '*'
+LEXER BUG - UNMATCHED: &
+LEXER BUG - UNMATCHED: ^
+LEXER BUG - UNMATCHED: $
+#1 TYPEID Comment
+#1 OBJECTID test
+#1 '('
+#1 '*'
+#1 TYPEID Comment
+#1 OBJECTID test
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 TYPEID Comment
+#1 OBJECTID test
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 TYPEID Comment
+#1 '('
+#1 '*'
+#1 OBJECTID test
+#1 '*'
+#1 ')'
+#1 TYPEID Comment
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 TYPEID Comment
+#1 OBJECTID test
+#1 '('
+#1 '*'
+#1 OBJECTID comment
+#1 OBJECTID test
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+LEXER BUG - UNMATCHED: \
+#1 '*'
+#1 '('
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 '('
+#1 '*'
+#1 TYPEID Comment
+#1 '*'
+#1 '*'
+#1 ')'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 '*'
+#1 ')'
+#1 TYPEID Foo
+#1 OBJECTID bar
+#1 '-'
+#1 '-'
+#1 OBJECTID hello
+#1 OBJECTID my
+#1 OBJECTID name
+#1 OBJECTID is
+#1 OBJECTID george
+#1 ';'
+LEXER BUG - UNMATCHED: @
+LEXER BUG - UNMATCHED: #
+LEXER BUG - UNMATCHED: $
+LEXER BUG - UNMATCHED: #
+LEXER BUG - UNMATCHED: @
+LEXER BUG - UNMATCHED: !
+LEXER BUG - UNMATCHED: ^
+LEXER BUG - UNMATCHED: %
+LEXER BUG - UNMATCHED: &
+LEXER BUG - UNMATCHED: $
+LEXER BUG - UNMATCHED: &
+LEXER BUG - UNMATCHED: @
+LEXER BUG - UNMATCHED: $
+LEXER BUG - UNMATCHED: #
+LEXER BUG - UNMATCHED: $
+#1 TYPEID ESFsej
+#1 OBJECTID ok34
+#1 ';'
+#1 OBJECTID u90
+#1 TYPEID Moo
+#1 OBJECTID bow
+#1 '-'
+#1 '-'
+#1 '-'
+#1 OBJECTID heelo
+#1 OBJECTID my
+#1 OBJECTID nma
+#1 OBJECTID ei
+#1 OBJECTID sgeoegre
+#1 ';'
+#1 INT_CONST 234
+#1 INT_CONST 2
+LEXER BUG - UNMATCHED: #
+LEXER BUG - UNMATCHED: $
+LEXER BUG - UNMATCHED: @
+LEXER BUG - UNMATCHED: #
+LEXER BUG - UNMATCHED: $
+#1 OBJECTID f
+#1 TYPEID JoJo
+#1 TYPEID JojOj
+#1 OBJECTID joJoj323
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 '-'
+#1 OBJECTID dfdj
+#1 '-'
+#1 '-'
+#1 OBJECTID fadsjfkldsafjklsd
+#1 ';'
+#1 '-'
+#1 '-'
+LEXER BUG - UNMATCHED: \
+#1 OBJECTID n
+#1 OBJECTID dfdsajfk312
+#1 '-'
+#1 '-'

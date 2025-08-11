@@ -1,0 +1,36 @@
+#1 '('
+#1 '*'
+#1 OBJECTID first
+#1 OBJECTID line
+#1 '('
+#1 '*'
+#1 OBJECTID second
+#1 OBJECTID line
+#1 '-'
+#1 '-'
+#1 OBJECTID third
+#1 OBJECTID line
+#1 '*'
+#1 ')'
+#1 OBJECTID fourth
+#1 OBJECTID line
+#1 '*'
+#1 ')'
+#1 '-'
+#1 '-'
+#1 OBJECTID sixth
+#1 OBJECTID line
+#1 '+'
+#1 OBJECTID abc
+#1 '-'
+#1 '-'
+#1 OBJECTID ninth
+#1 OBJECTID line
+#1 '('
+#1 '*'
+#1 OBJECTID tenth
+#1 OBJECTID line
+#1 '*'
+#1 ')'
+#1 TYPEID DEF
+#1 STR_CONST "string"

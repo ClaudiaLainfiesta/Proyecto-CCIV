@@ -1,0 +1,34 @@
+#name "./multilinecomment.cool"
+#1 '('
+#1 '*'
+#1 OBJECTID comment
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 OBJECTID also
+#1 OBJECTID a
+#1 OBJECTID comment
+#1 '*'
+#1 ')'
+#1 NOT
+#1 IN
+#1 OBJECTID a
+#1 OBJECTID comment
+#1 '('
+#1 '*'
+#1 IN
+#1 OBJECTID a
+#1 OBJECTID comment
+#1 OBJECTID with
+#1 OBJECTID many
+#1 OBJECTID lines
+#1 '*'
+#1 ')'
+#1 '('
+#1 '*'
+#1 NOT
+#1 OBJECTID a
+#1 OBJECTID comment
+#1 '*'
+#1 ')'

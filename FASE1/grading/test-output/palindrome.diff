@@ -1,0 +1,70 @@
+23c23
+< THEN
+---
+> OBJECTID then
+25c25
+< ELSE
+---
+> OBJECTID else
+34c34
+< THEN
+---
+> OBJECTID then
+36c36
+< ELSE
+---
+> OBJECTID else
+61c61
+< THEN
+---
+> OBJECTID then
+79c79
+< ELSE
+---
+> OBJECTID else
+94c94,96
+< TYPEID SELF_TYPE
+---
+> TYPEID SELF
+> LEXER BUG - UNMATCHED: _
+> TYPEID TYPE
+102c104,106
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+104c108
+< STR_CONST "enter a string\n"
+---
+> STR_CONST "enter a string\\n"
+110c114,116
+< OBJECTID in_string
+---
+> IN
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+114,115c120,123
+< THEN
+< OBJECTID out_string
+---
+> OBJECTID then
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+117c125
+< STR_CONST "that was a palindrome\n"
+---
+> STR_CONST "that was a palindrome\\n"
+119,120c127,130
+< ELSE
+< OBJECTID out_string
+---
+> OBJECTID else
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+122c132
+< STR_CONST "that was not a palindrome\n"
+---
+> STR_CONST "that was not a palindrome\\n"

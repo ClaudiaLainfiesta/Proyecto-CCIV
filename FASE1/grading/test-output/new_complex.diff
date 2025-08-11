@@ -1,0 +1,198 @@
+10c10,12
+< TYPEID SELF_TYPE
+---
+> TYPEID SELF
+> LEXER BUG - UNMATCHED: _
+> TYPEID TYPE
+13c15
+< LET
+---
+> OBJECTID let
+19c21
+< NEW
+---
+> OBJECTID new
+30a33,40
+> '-'
+> '-'
+> OBJECTID trivially
+> OBJECTID equal
+> '('
+> OBJECTID see
+> TYPEID CoolAid
+> ')'
+34c44,46
+< OBJECTID reflect_X
+---
+> OBJECTID reflect
+> LEXER BUG - UNMATCHED: _
+> TYPEID X
+40,44c52,54
+< OBJECTID reflect_0
+< '('
+< ')'
+< THEN
+< OBJECTID out_string
+---
+> OBJECTID reflect
+> LEXER BUG - UNMATCHED: _
+> INT_CONST 0
+46d55
+< STR_CONST "=)\n"
+48,49c57,67
+< ELSE
+< OBJECTID out_string
+---
+> OBJECTID then
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+> '('
+> STR_CONST "=)\\n"
+> ')'
+> OBJECTID else
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+51c69
+< STR_CONST "=(\n"
+---
+> STR_CONST "=(\\n"
+54a73,75
+> '-'
+> '-'
+> OBJECTID equal
+58c79,81
+< OBJECTID reflect_X
+---
+> OBJECTID reflect
+> LEXER BUG - UNMATCHED: _
+> TYPEID X
+62c85,87
+< OBJECTID reflect_Y
+---
+> OBJECTID reflect
+> LEXER BUG - UNMATCHED: _
+> TYPEID Y
+70c95,97
+< OBJECTID reflect_0
+---
+> OBJECTID reflect
+> LEXER BUG - UNMATCHED: _
+> INT_CONST 0
+74,75c101,111
+< THEN
+< OBJECTID out_string
+---
+> OBJECTID then
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+> '('
+> STR_CONST "=)\\n"
+> ')'
+> OBJECTID else
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+77,82c113
+< STR_CONST "=)\n"
+< ')'
+< ELSE
+< OBJECTID out_string
+< '('
+< STR_CONST "=(\n"
+---
+> STR_CONST "=(\\n"
+142,143c173,176
+< THEN
+< OBJECTID out_int
+---
+> OBJECTID then
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID int
+147,148c180,183
+< ELSE
+< OBJECTID out_int
+---
+> OBJECTID else
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID int
+153c188,190
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+158c195,197
+< OBJECTID out_int
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID int
+163c202,204
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+170c211,213
+< OBJECTID reflect_0
+---
+> OBJECTID reflect
+> LEXER BUG - UNMATCHED: _
+> INT_CONST 0
+192c235,237
+< OBJECTID reflect_X
+---
+> OBJECTID reflect
+> LEXER BUG - UNMATCHED: _
+> TYPEID X
+209c254,256
+< OBJECTID reflect_Y
+---
+> OBJECTID reflect
+> LEXER BUG - UNMATCHED: _
+> TYPEID Y
+240c287,289
+< OBJECTID x_value
+---
+> OBJECTID x
+> LEXER BUG - UNMATCHED: _
+> OBJECTID value
+243c292
+< THEN
+---
+> OBJECTID then
+249c298,300
+< OBJECTID y_value
+---
+> OBJECTID y
+> LEXER BUG - UNMATCHED: _
+> OBJECTID value
+252c303
+< THEN
+---
+> OBJECTID then
+254c305
+< ELSE
+---
+> OBJECTID else
+257c308
+< ELSE
+---
+> OBJECTID else
+262c313,315
+< OBJECTID x_value
+---
+> OBJECTID x
+> LEXER BUG - UNMATCHED: _
+> OBJECTID value
+271c324,326
+< OBJECTID y_value
+---
+> OBJECTID y
+> LEXER BUG - UNMATCHED: _
+> OBJECTID value

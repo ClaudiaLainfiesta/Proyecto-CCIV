@@ -1,0 +1,28 @@
+0a1,8
+> '-'
+> '-'
+> '('
+> '*'
+> TYPEID This
+> OBJECTID isn
+> LEXER BUG - UNMATCHED: '
+> OBJECTID t
+7c15,16
+< LONGERROR
+---
+> '*'
+> ')'
+8a18,26
+> '('
+> '*'
+> '-'
+> '-'
+> OBJECTID neither
+> OBJECTID is
+> OBJECTID this
+> '*'
+> ')'
+11c29
+< THEN
+---
+> OBJECTID then

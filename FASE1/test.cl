@@ -1,51 +1,21 @@
-sumar(x : Int, y : Int) : Int {
-  x + y;
-};
+class Main inherits IO {
+    main() : Object {
+        {
+            if true then
+                out_string()
+            fi;
 
-restar(a : Int, b : Int) : Int {
-  a - b;
-};
+            loop
+                out_string()
+            pool;
 
-multiplicar(m : Int, n : Int) : Int {
-  m * n;
-};
+            case 1 of
+                x : Int => out_string();
+            esac;
 
-dividir(dividendo : Int, divisor : Int) : Int {
-  dividendo / divisor;
-};
+            in;
 
-comparar(c1 : Int, c2 : Int) : Bool {
-  c1 < c2;
-};
-
-compararIgual(c1 : Int, c2 : Int) : Bool {
-  c1 = c2;
-};
-
-negacionEntera(x : Int) : Int {
-  ~x;
-};
-
-negacionBooleana(flag : Bool) : Bool {
-  not flag;
-};
-
-asignacionEjemplo() : Int {
-  variable <- 42;
-};
-
-expresionCompuesta() : Int {
-  {
-    a <- 1;
-    b <- 2;
-    a + b * (a + b);
-  };
-};
-
-boolConstantes() : Bool {
-  true;
-};
-
-otraBoolConstante() : Bool {
-  false;
+            self.methodName();
+        }
+    };
 };

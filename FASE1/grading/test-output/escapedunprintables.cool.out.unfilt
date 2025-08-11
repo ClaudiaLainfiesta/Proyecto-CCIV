@@ -1,0 +1,6 @@
+#name "./escapedunprintables.cool"
+#1 STR_CONST "This is a tab:\\\t"
+#1 STR_CONST "This is a backspace:\\\b"
+#1 STR_CONST "This is a formfeed:\\\f"
+#1 STR_CONST "This is a carriage return:\015"
+#1 STR_CONST "This is an escape:\033"

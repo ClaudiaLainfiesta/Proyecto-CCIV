@@ -1,0 +1,42 @@
+0a1,8
+> '('
+> '*'
+> OBJECTID various
+> OBJECTID forms
+> OF
+> OBJECTID whitespace
+> '*'
+> ')'
+1a10,14
+> '('
+> '*'
+> OBJECTID blanks
+> '*'
+> ')'
+2a16,20
+> '('
+> '*'
+> OBJECTID formfeed
+> '*'
+> ')'
+3a22,27
+> '('
+> '*'
+> OBJECTID carriage
+> OBJECTID return
+> '*'
+> ')'
+4a29,33
+> '('
+> '*'
+> OBJECTID tab
+> '*'
+> ')'
+5a35,41
+> LEXER BUG - UNMATCHED: 
+> '('
+> '*'
+> OBJECTID vertical
+> OBJECTID tab
+> '*'
+> ')'

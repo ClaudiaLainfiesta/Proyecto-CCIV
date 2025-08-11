@@ -1,0 +1,10 @@
+9c9,11
+< OBJECTID fi_if
+---
+> FI
+> LEXER BUG - UNMATCHED: _
+> IF
+19c21
+< THEN
+---
+> TYPEID THEN

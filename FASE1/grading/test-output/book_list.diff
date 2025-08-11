@@ -1,0 +1,463 @@
+0a1,12
+> '-'
+> '-'
+> OBJECTID example
+> OF
+> OBJECTID static
+> OBJECTID and
+> OBJECTID dynamic
+> OBJECTID type
+> OBJECTID differing
+> OBJECTID for
+> OBJECTID a
+> OBJECTID dispatch
+16c28,30
+< OBJECTID title_p
+---
+> OBJECTID title
+> LEXER BUG - UNMATCHED: _
+> OBJECTID p
+20c34,36
+< OBJECTID author_p
+---
+> OBJECTID author
+> LEXER BUG - UNMATCHED: _
+> OBJECTID p
+30c46,48
+< OBJECTID title_p
+---
+> OBJECTID title
+> LEXER BUG - UNMATCHED: _
+> OBJECTID p
+34c52,54
+< OBJECTID author_p
+---
+> OBJECTID author
+> LEXER BUG - UNMATCHED: _
+> OBJECTID p
+48c68,70
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+53c75,77
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+58c82,84
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+60c86
+< STR_CONST "\n"
+---
+> STR_CONST "\\n"
+63c89,91
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+68c96,98
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+73c103,105
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+75c107
+< STR_CONST "\n"
+---
+> STR_CONST "\\n"
+90c122,124
+< OBJECTID per_title
+---
+> OBJECTID per
+> LEXER BUG - UNMATCHED: _
+> OBJECTID title
+96c130,132
+< OBJECTID title_p
+---
+> OBJECTID title
+> LEXER BUG - UNMATCHED: _
+> OBJECTID p
+100c136,138
+< OBJECTID author_p
+---
+> OBJECTID author
+> LEXER BUG - UNMATCHED: _
+> OBJECTID p
+104c142,146
+< OBJECTID per_title_p
+---
+> OBJECTID per
+> LEXER BUG - UNMATCHED: _
+> OBJECTID title
+> LEXER BUG - UNMATCHED: _
+> OBJECTID p
+114c156,158
+< OBJECTID title_p
+---
+> OBJECTID title
+> LEXER BUG - UNMATCHED: _
+> OBJECTID p
+116c160,162
+< OBJECTID author_p
+---
+> OBJECTID author
+> LEXER BUG - UNMATCHED: _
+> OBJECTID p
+119c165,167
+< OBJECTID per_title
+---
+> OBJECTID per
+> LEXER BUG - UNMATCHED: _
+> OBJECTID title
+121c169,173
+< OBJECTID per_title_p
+---
+> OBJECTID per
+> LEXER BUG - UNMATCHED: _
+> OBJECTID title
+> LEXER BUG - UNMATCHED: _
+> OBJECTID p
+136c188
+< '@'
+---
+> LEXER BUG - UNMATCHED: @
+143c195,197
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+148c202,204
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+150c206,208
+< OBJECTID per_title
+---
+> OBJECTID per
+> LEXER BUG - UNMATCHED: _
+> OBJECTID title
+153c211,213
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+155c215
+< STR_CONST "\n"
+---
+> STR_CONST "\\n"
+169a230,267
+> '('
+> '*'
+> TYPEID Since
+> OBJECTID abort
+> STR_CONST "returns"
+> OBJECTID type
+> TYPEID Object
+> ','
+> OBJECTID we
+> OBJECTID have
+> OBJECTID to
+> OBJECTID add
+> OBJECTID an
+> OBJECTID expression
+> OF
+> OBJECTID type
+> TYPEID Bool
+> OBJECTID here
+> OBJECTID to
+> OBJECTID satisfy
+> OBJECTID the
+> OBJECTID typechecker
+> '.'
+> TYPEID This
+> OBJECTID code
+> OBJECTID is
+> OBJECTID unreachable
+> ','
+> OBJECTID since
+> OBJECTID abort
+> '('
+> ')'
+> OBJECTID halts
+> OBJECTID the
+> OBJECTID program
+> '.'
+> '*'
+> ')'
+196,197c294,297
+< LET
+< OBJECTID new_cell
+---
+> OBJECTID let
+> OBJECTID new
+> LEXER BUG - UNMATCHED: _
+> OBJECTID cell
+201c301
+< NEW
+---
+> OBJECTID new
+204c304,306
+< OBJECTID new_cell
+---
+> OBJECTID new
+> LEXER BUG - UNMATCHED: _
+> OBJECTID cell
+214a317,354
+> '('
+> '*'
+> TYPEID Since
+> OBJECTID abort
+> STR_CONST "returns"
+> OBJECTID type
+> TYPEID Object
+> ','
+> OBJECTID we
+> OBJECTID have
+> OBJECTID to
+> OBJECTID add
+> OBJECTID an
+> OBJECTID expression
+> OF
+> OBJECTID type
+> TYPEID Book
+> OBJECTID here
+> OBJECTID to
+> OBJECTID satisfy
+> OBJECTID the
+> OBJECTID typechecker
+> '.'
+> TYPEID This
+> OBJECTID code
+> OBJECTID is
+> OBJECTID unreachable
+> ','
+> OBJECTID since
+> OBJECTID abort
+> '('
+> ')'
+> OBJECTID halts
+> OBJECTID the
+> OBJECTID program
+> '.'
+> '*'
+> ')'
+226c366
+< NEW
+---
+> OBJECTID new
+231a372,409
+> '('
+> '*'
+> TYPEID Since
+> OBJECTID abort
+> STR_CONST "returns"
+> OBJECTID type
+> TYPEID Object
+> ','
+> OBJECTID we
+> OBJECTID have
+> OBJECTID to
+> OBJECTID add
+> OBJECTID an
+> OBJECTID expression
+> OF
+> OBJECTID type
+> TYPEID BookList
+> OBJECTID here
+> OBJECTID to
+> OBJECTID satisfy
+> OBJECTID the
+> OBJECTID typechecker
+> '.'
+> TYPEID This
+> OBJECTID code
+> OBJECTID is
+> OBJECTID unreachable
+> ','
+> OBJECTID since
+> OBJECTID abort
+> '('
+> ')'
+> OBJECTID halts
+> OBJECTID the
+> OBJECTID program
+> '.'
+> '*'
+> ')'
+243c421
+< NEW
+---
+> OBJECTID new
+249c427,429
+< OBJECTID print_list
+---
+> OBJECTID print
+> LEXER BUG - UNMATCHED: _
+> OBJECTID list
+270a451,461
+> '-'
+> '-'
+> TYPEID We
+> OBJECTID keep
+> OBJECTID the
+> OBJECTID car
+> OBJECTID and
+> OBJECTID cdr
+> IN
+> OBJECTID attributes
+> '.'
+274a466,497
+> '-'
+> '-'
+> TYPEID Because
+> OBJECTID methods
+> OBJECTID and
+> OBJECTID features
+> OBJECTID must
+> OBJECTID have
+> OBJECTID different
+> OBJECTID names
+> ','
+> '-'
+> '-'
+> OBJECTID we
+> OBJECTID use
+> OBJECTID xcar
+> OBJECTID and
+> OBJECTID xcdr
+> OBJECTID for
+> OBJECTID the
+> OBJECTID attributes
+> OBJECTID and
+> OBJECTID reserve
+> '-'
+> '-'
+> OBJECTID car
+> OBJECTID and
+> OBJECTID cdr
+> OBJECTID for
+> OBJECTID the
+> OBJECTID features
+> '.'
+329c552,554
+< OBJECTID print_list
+---
+> OBJECTID print
+> LEXER BUG - UNMATCHED: _
+> OBJECTID list
+347c572,574
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+349c576
+< STR_CONST "- dynamic type was Book -\n"
+---
+> STR_CONST "- dynamic type was Book -\\n"
+356c583,585
+< OBJECTID out_string
+---
+> OBJECTID out
+> LEXER BUG - UNMATCHED: _
+> OBJECTID string
+358c587
+< STR_CONST "- dynamic type was Article -\n"
+---
+> STR_CONST "- dynamic type was Article -\\n"
+361c590
+< ESAC
+---
+> OBJECTID esac
+365c594,596
+< OBJECTID print_list
+---
+> OBJECTID print
+> LEXER BUG - UNMATCHED: _
+> OBJECTID list
+388c619,621
+< OBJECTID print_list
+---
+> OBJECTID print
+> LEXER BUG - UNMATCHED: _
+> OBJECTID list
+413,414c646,649
+< LET
+< OBJECTID a_book
+---
+> OBJECTID let
+> OBJECTID a
+> LEXER BUG - UNMATCHED: _
+> OBJECTID book
+419c654
+< NEW
+---
+> OBJECTID new
+431,432c666,669
+< LET
+< OBJECTID an_article
+---
+> OBJECTID let
+> OBJECTID an
+> LEXER BUG - UNMATCHED: _
+> OBJECTID article
+437c674
+< NEW
+---
+> OBJECTID new
+454c691
+< NEW
+---
+> OBJECTID new
+460c697,699
+< OBJECTID a_book
+---
+> OBJECTID a
+> LEXER BUG - UNMATCHED: _
+> OBJECTID book
+465c704,706
+< OBJECTID an_article
+---
+> OBJECTID an
+> LEXER BUG - UNMATCHED: _
+> OBJECTID article
+470c711,713
+< OBJECTID print_list
+---
+> OBJECTID print
+> LEXER BUG - UNMATCHED: _
+> OBJECTID list
+475a719,725
+> '-'
+> '-'
+> OBJECTID end
+> OBJECTID let
+> OBJECTID an
+> LEXER BUG - UNMATCHED: _
+> OBJECTID article
+476a727,733
+> '-'
+> '-'
+> OBJECTID end
+> OBJECTID let
+> OBJECTID a
+> LEXER BUG - UNMATCHED: _
+> OBJECTID book

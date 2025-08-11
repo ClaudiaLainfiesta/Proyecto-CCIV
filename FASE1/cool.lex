@@ -68,7 +68,8 @@ import java_cup.runtime.Symbol;
 
 %class CoolLexer
 %cup
-
+%state STRING
+%state COMMENT
 mayusculas = [A-Z]
 minusculas = [a-z]
 digito = [0-9]
@@ -82,35 +83,92 @@ alphanumerico = [A-Za-z0-9]
                                      here, after the last %% separator */
                                   return new Symbol(TokenConstants.DARROW); }
 
-<YYINITIAL>t[rR][uU][eE]                        {
-                                                    return new Symbol(TokenConstants.BOOL_CONST, true);
-                                                }   
+<YYINITIAL> [Ii][Nn][Hh][Ee][Rr][Ii][Tt][Ss]   {
+                                                   return new Symbol(TokenConstants.INHERITS);
+                                               }
 
-<YYINITIAL>f[aA][lL][sS][eE]                    {
-                                                    return new Symbol(TokenConstants.BOOL_CONST, false);
-                                                }
+<YYINITIAL>[Pp][Oo][Oo][Ll]                    {
+                                                   return new Symbol(TokenConstants.POOL);
+                                               }
 
-<YYINITIAL>[Nn][Oo][Tt]         {
-                                    return new Symbol(TokenConstants.NOT);
-                                }                                                
+<YYINITIAL>[Cc][Aa][Ss][Ee]                    {
+                                                   return new Symbol(TokenConstants.CASE);
+                                               }
+
+<YYINITIAL>[Ii][Nn]                            {   
+                                                   return new Symbol(TokenConstants.IN);
+                                               }
+
+<YYINITIAL>[Cc][Ll][Aa][Ss][Ss]                {
+                                                   return new Symbol(TokenConstants.CLASS);
+                                               }
+
+<YYINITIAL>[Ff][Ii]                            {
+                                                   return new Symbol(TokenConstants.FI);
+                                               }
+                
+<YYINITIAL>[Ll][Oo][Oo][Pp]                    {
+                                                   return new Symbol(TokenConstants.LOOP);
+                                               }
+
+<YYINITIAL>[Ii][Ff]                            {
+                                                   return new Symbol(TokenConstants.IF);
+                                               }
+
+<YYINITIAL>[Oo][Ff]                            {
+                                                   return new Symbol(TokenConstants.OF);
+                                               }
+
+<YYINITIAL>t[rR][uU][eE]                       {
+                                                   return new Symbol(TokenConstants.BOOL_CONST, true);
+                                               }   
+
+<YYINITIAL>f[aA][lL][sS][eE]                   {
+                                                   return new Symbol(TokenConstants.BOOL_CONST, false);
+                                               }
+
+<YYINITIAL>[Nn][Oo][Tt]                        {
+                                                   return new Symbol(TokenConstants.NOT);
+                                               }                                                
                                   
-<YYINITIAL>{mayusculas}{alphanumerico}*         {
-                                                    return new Symbol(TokenConstants.TYPEID, AbstractTable.idtable.addString(yytext()));
-                                                }     
+<YYINITIAL>{mayusculas}{alphanumerico}*        {
+                                                   return new Symbol(TokenConstants.TYPEID, AbstractTable.idtable.addString(yytext()));
+                                               }     
 
-<YYINITIAL>{minusculas}{alphanumerico}*         {
-                                                    return new Symbol(TokenConstants.OBJECTID, AbstractTable.idtable.addString(yytext()));
-                                                }  
+<YYINITIAL>{minusculas}{alphanumerico}*        {
+                                                   return new Symbol(TokenConstants.OBJECTID, AbstractTable.idtable.addString(yytext()));
+                                               }  
 
-<YYINITIAL>{digito}+                            {
-                                                    return new Symbol(TokenConstants.INT_CONST, AbstractTable.inttable.addString(yytext()));
-                                                }  
-                                                
+<YYINITIAL>{digito}+                           {
+                                                   return new Symbol(TokenConstants.INT_CONST, AbstractTable.inttable.addString(yytext()));
+                                               }  
+
+<YYINITIAL>[\"]         {   
+                            string_buf.delete(0,string_buf.length());
+                            yybegin(STRING);
+                        }
+
+<STRING>[^\"]           {
+                            string_buf.append(yytext());
+                        }
+
+<STRING>[\n]         {
+                            yybegin(YYINITIAL);
+                            return new Symbol(TokenConstants.ERROR, "Unterminated string constant");
+                        }
+    
+<STRING>[\"]            {
+                            yybegin(YYINITIAL);
+                            return new Symbol(TokenConstants.STR_CONST, AbstractTable.stringtable.addString(string_buf.toString()));
+                        }
+
+
+
 <YYINITIAL>" "          {
         
                         }
 
-<YYINITIAL>[\t\r\n\f]+ {
+<YYINITIAL>[\t\r\n\f]+  {
         
                         }
                         
@@ -178,8 +236,10 @@ alphanumerico = [A-Za-z0-9]
                             return new Symbol(TokenConstants.COLON);
                         }
 
-.                               { /* This rule should be the very last
-                                     in your lexical specification and
-                                     will match match everything not
-                                     matched by other lexical rules. */
-                                  System.err.println("LEXER BUG - UNMATCHED: " + yytext()); }
+<YYINITIAL>"."          {
+                            return new Symbol(TokenConstants.DOT);
+                        }
+
+.                       {
+                            System.err.println("LEXER BUG - UNMATCHED: " + yytext());
+                        }

@@ -1,0 +1,140 @@
+CLASS
+TYPEID Main
+INHERITS
+TYPEID IO
+'{'
+OBJECTID pal
+'('
+OBJECTID s
+':'
+TYPEID String
+')'
+':'
+TYPEID Bool
+'{'
+IF
+OBJECTID s
+'.'
+OBJECTID length
+'('
+')'
+'='
+INT_CONST 0
+OBJECTID then
+BOOL_CONST true
+OBJECTID else
+IF
+OBJECTID s
+'.'
+OBJECTID length
+'('
+')'
+'='
+INT_CONST 1
+OBJECTID then
+BOOL_CONST true
+OBJECTID else
+IF
+OBJECTID s
+'.'
+OBJECTID substr
+'('
+INT_CONST 0
+','
+INT_CONST 1
+')'
+'='
+OBJECTID s
+'.'
+OBJECTID substr
+'('
+OBJECTID s
+'.'
+OBJECTID length
+'('
+')'
+'-'
+INT_CONST 1
+','
+INT_CONST 1
+')'
+OBJECTID then
+OBJECTID pal
+'('
+OBJECTID s
+'.'
+OBJECTID substr
+'('
+INT_CONST 1
+','
+OBJECTID s
+'.'
+OBJECTID length
+'('
+')'
+'-'
+INT_CONST 2
+')'
+')'
+OBJECTID else
+BOOL_CONST false
+FI
+FI
+FI
+'}'
+';'
+OBJECTID i
+':'
+TYPEID Int
+';'
+OBJECTID main
+'('
+')'
+':'
+TYPEID SELF
+LEXER BUG - UNMATCHED: _
+TYPEID TYPE
+'{'
+'{'
+OBJECTID i
+ASSIGN
+'~'
+INT_CONST 1
+';'
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "enter a string\\n"
+')'
+';'
+IF
+OBJECTID pal
+'('
+IN
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+')'
+')'
+OBJECTID then
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "that was a palindrome\\n"
+')'
+OBJECTID else
+OBJECTID out
+LEXER BUG - UNMATCHED: _
+OBJECTID string
+'('
+STR_CONST "that was not a palindrome\\n"
+')'
+FI
+';'
+'}'
+'}'
+';'
+'}'
+';'

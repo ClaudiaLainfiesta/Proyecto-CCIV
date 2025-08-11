@@ -1,0 +1,61 @@
+#name "./operators.cool"
+#1 '('
+#1 '*'
+#1 OBJECTID some
+#1 OBJECTID operators
+#1 '*'
+#1 ')'
+#1 ';'
+#1 '{'
+#1 '}'
+#1 '('
+#1 ','
+#1 ')'
+#1 ':'
+LEXER BUG - UNMATCHED: @
+#1 '.'
+#1 '+'
+#1 '-'
+#1 '*'
+#1 '/'
+#1 '~'
+#1 '<'
+#1 '='
+#1 ASSIGN
+#1 DARROW
+#1 LE
+#1 '('
+#1 '*'
+#1 OBJECTID should
+#1 OBJECTID be
+#1 '<'
+#1 OBJECTID and
+#1 LE
+#1 '*'
+#1 ')'
+#1 '<'
+#1 LE
+#1 '('
+#1 '*'
+#1 OBJECTID should
+#1 OBJECTID be
+#1 LE
+#1 OBJECTID and
+#1 '='
+#1 '*'
+#1 ')'
+#1 LE
+#1 '='
+#1 '('
+#1 '*'
+#1 OBJECTID should
+#1 OBJECTID be
+#1 LE
+#1 OBJECTID and
+#1 DARROW
+#1 '*'
+#1 ')'
+#1 LE
+#1 DARROW
+#1 '<'
+#1 ASSIGN

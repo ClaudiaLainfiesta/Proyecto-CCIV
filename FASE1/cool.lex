@@ -115,6 +115,30 @@ alphanumerico = [A-Za-z0-9]
                                                    return new Symbol(TokenConstants.IF);
                                                }
 
+<YYINITIAL>[Ee][Ll][Ss][Ee]                    {
+                                                   return new Symbol(TokenConstants.ELSE);
+                                               }
+
+<YYINITIAL>[Ww][Hh][Ii][Ll][Ee]                {
+                                                   return new Symbol(TokenConstants.WHILE);
+                                               }
+
+<YYINITIAL>[Nn][Ee][Ww]                        {
+                                                   return new Symbol(TokenConstants.NEW);
+                                               }                                               
+
+<YYINITIAL>[Ii][Ss][Vv][Oo][Ii][Dd]            {
+                                                    return new Symbol(TokenConstants.ISVOID);
+                                               } 
+
+<YYINITIAL>[Ee][Ss][Aa][Cc]                    {
+                                                    return new Symbol(TokenConstants.ESAC);
+                                               } 
+
+<YYINITIAL>[Tt][Hh][Ee][Nn]                    {
+                                                    return new Symbol(TokenConstants.THEN);
+                                               } 
+
 <YYINITIAL>[Oo][Ff]                            {
                                                    return new Symbol(TokenConstants.OF);
                                                }
@@ -130,7 +154,11 @@ alphanumerico = [A-Za-z0-9]
 <YYINITIAL>[Nn][Oo][Tt]                        {
                                                    return new Symbol(TokenConstants.NOT);
                                                }                                                
-                                  
+
+<YYINITIAL>[Ll][Ee][Tt]                        {
+                                                   return new Symbol(TokenConstants.LET_STMT);
+                                               }                                                
+                                                                  
 <YYINITIAL>{mayusculas}{alphanumerico}*        {
                                                    return new Symbol(TokenConstants.TYPEID, AbstractTable.idtable.addString(yytext()));
                                                }     
@@ -162,8 +190,6 @@ alphanumerico = [A-Za-z0-9]
                             return new Symbol(TokenConstants.STR_CONST, AbstractTable.stringtable.addString(string_buf.toString()));
                         }
 
-
-
 <YYINITIAL>" "          {
         
                         }
@@ -194,6 +220,10 @@ alphanumerico = [A-Za-z0-9]
 
 <YYINITIAL>"<="         {
                             return new Symbol(TokenConstants.LE);
+                        }
+
+<YYINITIAL>"@"         {
+                            return new Symbol(TokenConstants.AT);
                         }
 
 <YYINITIAL>"<"          {
@@ -240,6 +270,8 @@ alphanumerico = [A-Za-z0-9]
                             return new Symbol(TokenConstants.DOT);
                         }
 
-.                       {
-                            System.err.println("LEXER BUG - UNMATCHED: " + yytext());
-                        }
+. { return new Symbol(TokenConstants.ERROR, yytext()); }
+
+%eofval{
+    return new Symbol(TokenConstants.EOF);
+%eofval}

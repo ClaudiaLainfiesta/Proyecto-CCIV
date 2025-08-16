@@ -1,10 +1,2 @@
 #name "./s19.test.cool"
-#1 '('
-#1 '*'
-#1 OBJECTID illegal
-#1 ':'
-#1 OBJECTID unescaped
-#1 OBJECTID newline
-#1 '*'
-#1 ')'
-#1 STR_CONST "c\nd"
+#2 STR_CONST "c\nd"

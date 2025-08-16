@@ -33,6 +33,8 @@ import java_cup.runtime.Symbol;
     AbstractSymbol curr_filename() {
 	return filename;
     }
+
+    int cantComents = 0;
 %}
 
 %init{
@@ -57,11 +59,21 @@ import java_cup.runtime.Symbol;
     case YYINITIAL:
 	/* nothing special to do in the initial state */
 	break;
+    case STRING:
+        yybegin(YYINITIAL);
+        return new Symbol(TokenConstants.ERROR, "EOF in string constant");
+    case COMMENTS:
+        yybegin(YYINITIAL);
+        return new Symbol(TokenConstants.ERROR, "EOF in comment");
+    case COMMENT:
+	/* nothing special to do in the initial state */
+	break;
 	/* If necessary, add code for other states here, e.g:
 	   case COMMENT:
 	   ...
 	   break;
 	*/
+
     }
     return new Symbol(TokenConstants.EOF);
 %eofval}
@@ -70,6 +82,7 @@ import java_cup.runtime.Symbol;
 %cup
 %state STRING
 %state COMMENT
+%state COMMENTS
 mayusculas = [A-Z]
 minusculas = [a-z]
 digito = [0-9]
@@ -82,6 +95,8 @@ alphanumerico = [A-Za-z0-9]
                                      Further lexical rules should be defined
                                      here, after the last %% separator */
                                   return new Symbol(TokenConstants.DARROW); }
+
+
 
 <YYINITIAL> [Ii][Nn][Hh][Ee][Rr][Ii][Tt][Ss]   {
                                                    return new Symbol(TokenConstants.INHERITS);
@@ -156,14 +171,17 @@ alphanumerico = [A-Za-z0-9]
                                                }                                                
 
 <YYINITIAL>[Ll][Ee][Tt]                        {
-                                                   return new Symbol(TokenConstants.LET_STMT);
+                                                   return new Symbol(TokenConstants.LET);
                                                }                                                
-                                                                  
+                                              
+                                               
+
+
 <YYINITIAL>{mayusculas}{alphanumerico}*        {
                                                    return new Symbol(TokenConstants.TYPEID, AbstractTable.idtable.addString(yytext()));
                                                }     
 
-<YYINITIAL>{minusculas}{alphanumerico}*        {
+<YYINITIAL>{minusculas}[A-Za-z0-9_]*   {
                                                    return new Symbol(TokenConstants.OBJECTID, AbstractTable.idtable.addString(yytext()));
                                                }  
 
@@ -171,31 +189,94 @@ alphanumerico = [A-Za-z0-9]
                                                    return new Symbol(TokenConstants.INT_CONST, AbstractTable.inttable.addString(yytext()));
                                                }  
 
+
+
+
 <YYINITIAL>[\"]         {   
                             string_buf.delete(0,string_buf.length());
                             yybegin(STRING);
                         }
 
-<STRING>[^\"]           {
+
+
+<STRING>[^\"]         {
                             string_buf.append(yytext());
                         }
 
-<STRING>[\n]         {
-                            yybegin(YYINITIAL);
-                            return new Symbol(TokenConstants.ERROR, "Unterminated string constant");
-                        }
     
 <STRING>[\"]            {
                             yybegin(YYINITIAL);
                             return new Symbol(TokenConstants.STR_CONST, AbstractTable.stringtable.addString(string_buf.toString()));
                         }
 
+
+
+
+<YYINITIAL>"(*"         {   
+                            cantComents++;
+                            yybegin(COMMENTS);
+                        }
+
+<COMMENTS>"(*"          {
+                            cantComents++;
+                        }
+
+
+<COMMENTS>"*)"          {   
+                            cantComents--;
+                            if (cantComents == 0) {
+                                yybegin(YYINITIAL);
+                            }
+                            else if (cantComents < 0) {
+                                return new Symbol(TokenConstants.ERROR, "Unmatched *)");
+                            }
+                        }
+
+<COMMENTS>[ \t\r\f]+    {
+        
+                        }
+
+<COMMENTS>[\n]          {
+                            curr_lineno++;
+                        }
+    
+<COMMENTS>.   {  }
+
+<COMMENTS><<EOF>>  { return new Symbol(TokenConstants.ERROR, "EOF in comment"); }
+
+<YYINITIAL>"*)"         {
+                            return new Symbol(TokenConstants.ERROR, "Unmatched *)");
+                        }
+
+
+
+<YYINITIAL>"--"         {
+                            yybegin(COMMENT);
+                        }
+        
+<COMMENT>[^\n]          {
+
+                        }
+
+<COMMENT>\n             {
+                            curr_lineno++;
+                            yybegin(YYINITIAL);
+                        }
+                        
+<COMMENT><<EOF>>        { }
+
+
+
 <YYINITIAL>" "          {
         
                         }
 
-<YYINITIAL>[\t\r\n\f]+  {
+<YYINITIAL>[\t\r\f]+    {
         
+                        }
+
+<YYINITIAL>[\n]         {
+                            curr_lineno++;
                         }
                         
 <YYINITIAL>"+"          {
@@ -272,6 +353,4 @@ alphanumerico = [A-Za-z0-9]
 
 . { return new Symbol(TokenConstants.ERROR, yytext()); }
 
-%eofval{
-    return new Symbol(TokenConstants.EOF);
-%eofval}
+

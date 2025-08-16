@@ -1,99 +1,13 @@
 #name "./wq0607-c4.cool"
-#1 '('
-#1 '*'
-#1 TYPEID Complicated
-#1 OBJECTID sequence
-#1 OF
-#1 OBJECTID strings
-#1 OBJECTID and
-#1 OBJECTID escaped
-#1 OBJECTID quotes
-#1 OBJECTID and
-#1 OBJECTID errors
-#1 OBJECTID and
-#1 OBJECTID single
-#1 '-'
-#1 OBJECTID line
-#1 OBJECTID comments
-#1 '*'
-#1 ')'
-#1 STR_CONST "\\\\-"
-#1 '-'
-#1 STR_CONST "-\\-"
-#1 '-'
-#1 '-'
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST ""
-LEXER BUG - UNMATCHED: \
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST "-"
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST "\\\\"
-#1 '-'
-LEXER BUG - UNMATCHED: \
-#1 '-'
-#1 STR_CONST "\\\\"
-#1 STR_CONST ""
-LEXER BUG - UNMATCHED: \
-#1 '-'
-#1 '-'
-#1 STR_CONST "\\"
-#1 STR_CONST "\\"
-#1 STR_CONST "\\\\"
-#1 STR_CONST "\\"
-#1 '-'
-#1 '-'
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST ""
-LEXER BUG - UNMATCHED: \
-#1 '-'
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST ""
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST "--\\\\"
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST "\\\\"
-#1 '-'
-#1 '-'
-#1 STR_CONST ""
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST "\\--"
-#1 STR_CONST "\\"
-#1 STR_CONST "\\\\"
-#1 STR_CONST "\\"
-#1 '-'
-#1 '-'
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST ""
-LEXER BUG - UNMATCHED: \
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST ""
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST "--\\\\"
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST "\\\\"
-#1 STR_CONST "--"
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST "\\"
-#1 STR_CONST "\\"
-#1 STR_CONST "\\-\\"
-#1 STR_CONST "\\--"
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST ""
-LEXER BUG - UNMATCHED: \
-#1 '-'
-#1 '-'
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST ""
-LEXER BUG - UNMATCHED: \
-#1 STR_CONST "\\\\"
-LEXER BUG - UNMATCHED: \
-#1 '-'
-#1 '-'
-#1 STR_CONST "\\\\"
-#1 STR_CONST ""
-LEXER BUG - UNMATCHED: \
-#1 '-'
-#1 '-'
-#1 STR_CONST "\\"
-#1 STR_CONST "\\"
+#3 STR_CONST "\\\\-"
+#3 '-'
+#3 STR_CONST "-\\-"
+#4 STR_CONST "\\\\"
+#4 STR_CONST "\\"
+#5 STR_CONST "\\\\"
+#5 STR_CONST "\\"
+#6 STR_CONST "\\-\\"
+#6 STR_CONST "\\--"
+#6 ERROR "\\"
+#6 STR_CONST ""
+#6 ERROR "\\"

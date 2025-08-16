@@ -4,138 +4,130 @@
 #1 INHERITS
 #1 TYPEID IO
 #1 '{'
-#1 OBJECTID pal
-#1 '('
-#1 OBJECTID s
-#1 ':'
-#1 TYPEID String
-#1 ')'
-#1 ':'
-#1 TYPEID Bool
-#1 '{'
-#1 IF
-#1 OBJECTID s
-#1 '.'
-#1 OBJECTID length
-#1 '('
-#1 ')'
-#1 '='
-#1 INT_CONST 0
-#1 OBJECTID then
-#1 BOOL_CONST true
-#1 OBJECTID else
-#1 IF
-#1 OBJECTID s
-#1 '.'
-#1 OBJECTID length
-#1 '('
-#1 ')'
-#1 '='
-#1 INT_CONST 1
-#1 OBJECTID then
-#1 BOOL_CONST true
-#1 OBJECTID else
-#1 IF
-#1 OBJECTID s
-#1 '.'
-#1 OBJECTID substr
-#1 '('
-#1 INT_CONST 0
-#1 ','
-#1 INT_CONST 1
-#1 ')'
-#1 '='
-#1 OBJECTID s
-#1 '.'
-#1 OBJECTID substr
-#1 '('
-#1 OBJECTID s
-#1 '.'
-#1 OBJECTID length
-#1 '('
-#1 ')'
-#1 '-'
-#1 INT_CONST 1
-#1 ','
-#1 INT_CONST 1
-#1 ')'
-#1 OBJECTID then
-#1 OBJECTID pal
-#1 '('
-#1 OBJECTID s
-#1 '.'
-#1 OBJECTID substr
-#1 '('
-#1 INT_CONST 1
-#1 ','
-#1 OBJECTID s
-#1 '.'
-#1 OBJECTID length
-#1 '('
-#1 ')'
-#1 '-'
-#1 INT_CONST 2
-#1 ')'
-#1 ')'
-#1 OBJECTID else
-#1 BOOL_CONST false
-#1 FI
-#1 FI
-#1 FI
-#1 '}'
-#1 ';'
-#1 OBJECTID i
-#1 ':'
-#1 TYPEID Int
-#1 ';'
-#1 OBJECTID main
-#1 '('
-#1 ')'
-#1 ':'
-#1 TYPEID SELF
-LEXER BUG - UNMATCHED: _
-#1 TYPEID TYPE
-#1 '{'
-#1 '{'
-#1 OBJECTID i
-#1 ASSIGN
-#1 '~'
-#1 INT_CONST 1
-#1 ';'
-#1 OBJECTID out
-LEXER BUG - UNMATCHED: _
-#1 OBJECTID string
-#1 '('
-#1 STR_CONST "enter a string\\n"
-#1 ')'
-#1 ';'
-#1 IF
-#1 OBJECTID pal
-#1 '('
-#1 IN
-LEXER BUG - UNMATCHED: _
-#1 OBJECTID string
-#1 '('
-#1 ')'
-#1 ')'
-#1 OBJECTID then
-#1 OBJECTID out
-LEXER BUG - UNMATCHED: _
-#1 OBJECTID string
-#1 '('
-#1 STR_CONST "that was a palindrome\\n"
-#1 ')'
-#1 OBJECTID else
-#1 OBJECTID out
-LEXER BUG - UNMATCHED: _
-#1 OBJECTID string
-#1 '('
-#1 STR_CONST "that was not a palindrome\\n"
-#1 ')'
-#1 FI
-#1 ';'
-#1 '}'
-#1 '}'
-#1 ';'
-#1 '}'
-#1 ';'
+#2 OBJECTID pal
+#2 '('
+#2 OBJECTID s
+#2 ':'
+#2 TYPEID String
+#2 ')'
+#2 ':'
+#2 TYPEID Bool
+#2 '{'
+#3 IF
+#3 OBJECTID s
+#3 '.'
+#3 OBJECTID length
+#3 '('
+#3 ')'
+#3 '='
+#3 INT_CONST 0
+#4 THEN
+#4 BOOL_CONST true
+#5 ELSE
+#5 IF
+#5 OBJECTID s
+#5 '.'
+#5 OBJECTID length
+#5 '('
+#5 ')'
+#5 '='
+#5 INT_CONST 1
+#6 THEN
+#6 BOOL_CONST true
+#7 ELSE
+#7 IF
+#7 OBJECTID s
+#7 '.'
+#7 OBJECTID substr
+#7 '('
+#7 INT_CONST 0
+#7 ','
+#7 INT_CONST 1
+#7 ')'
+#7 '='
+#7 OBJECTID s
+#7 '.'
+#7 OBJECTID substr
+#7 '('
+#7 OBJECTID s
+#7 '.'
+#7 OBJECTID length
+#7 '('
+#7 ')'
+#7 '-'
+#7 INT_CONST 1
+#7 ','
+#7 INT_CONST 1
+#7 ')'
+#8 THEN
+#8 OBJECTID pal
+#8 '('
+#8 OBJECTID s
+#8 '.'
+#8 OBJECTID substr
+#8 '('
+#8 INT_CONST 1
+#8 ','
+#8 OBJECTID s
+#8 '.'
+#8 OBJECTID length
+#8 '('
+#8 ')'
+#8 '-'
+#8 INT_CONST 2
+#8 ')'
+#8 ')'
+#9 ELSE
+#9 BOOL_CONST false
+#10 FI
+#10 FI
+#10 FI
+#11 '}'
+#11 ';'
+#13 OBJECTID i
+#13 ':'
+#13 TYPEID Int
+#13 ';'
+#15 OBJECTID main
+#15 '('
+#15 ')'
+#15 ':'
+#15 TYPEID SELF
+#15 ERROR "_"
+#15 TYPEID TYPE
+#15 '{'
+#16 '{'
+#17 OBJECTID i
+#17 ASSIGN
+#17 '~'
+#17 INT_CONST 1
+#17 ';'
+#18 OBJECTID out_string
+#18 '('
+#18 STR_CONST "enter a string\\n"
+#18 ')'
+#18 ';'
+#19 IF
+#19 OBJECTID pal
+#19 '('
+#19 OBJECTID in_string
+#19 '('
+#19 ')'
+#19 ')'
+#20 THEN
+#20 OBJECTID out_string
+#20 '('
+#20 STR_CONST "that was a palindrome\\n"
+#20 ')'
+#21 ELSE
+#21 OBJECTID out_string
+#21 '('
+#21 STR_CONST "that was not a palindrome\\n"
+#21 ')'
+#22 FI
+#22 ';'
+#23 '}'
+#24 '}'
+#24 ';'
+#25 '}'
+#25 ';'

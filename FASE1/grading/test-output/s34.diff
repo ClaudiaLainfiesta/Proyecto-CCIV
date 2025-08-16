@@ -1,7 +1,0 @@
-1,2c1,3
-< OBJECTID before_it
-< LONGERROR
----
-> OBJECTID before
-> LEXER BUG - UNMATCHED: _
-> OBJECTID it

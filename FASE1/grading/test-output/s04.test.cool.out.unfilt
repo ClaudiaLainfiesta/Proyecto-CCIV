@@ -1,43 +1,8 @@
 #name "./s04.test.cool"
-#1 '('
-#1 '*'
-#1 OBJECTID various
-#1 OBJECTID forms
-#1 OF
-#1 OBJECTID whitespace
-#1 '*'
-#1 ')'
-#1 INT_CONST 0
-#1 '('
-#1 '*'
-#1 OBJECTID blanks
-#1 '*'
-#1 ')'
-#1 INT_CONST 1
-#1 '('
-#1 '*'
-#1 OBJECTID formfeed
-#1 '*'
-#1 ')'
-#1 INT_CONST 2
-#1 '('
-#1 '*'
-#1 OBJECTID carriage
-#1 OBJECTID return
-#1 '*'
-#1 ')'
-#1 INT_CONST 3
-#1 '('
-#1 '*'
-#1 OBJECTID tab
-#1 '*'
-#1 ')'
-#1 INT_CONST 4
-LEXER BUG - UNMATCHED: 
-#1 '('
-#1 '*'
-#1 OBJECTID vertical
-#1 OBJECTID tab
-#1 '*'
-#1 ')'
-#1 INT_CONST 5
+#2 INT_CONST 0
+#4 INT_CONST 1
+#6 INT_CONST 2
+#8 INT_CONST 3
+#10 INT_CONST 4
+#11 ERROR "\013"
+#12 INT_CONST 5

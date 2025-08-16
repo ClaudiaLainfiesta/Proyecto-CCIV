@@ -1,13 +1,3 @@
-1,3c1,8
-< LONGERROR
+2,3d1
 < OBJECTID a
 < '+'
----
-> '('
-> '*'
-> OBJECTID null
-> OBJECTID character
-> IN
-> OBJECTID string
-> '*'
-> ')'

@@ -20,9 +20,9 @@ OBJECTID length
 ')'
 '='
 INT_CONST 0
-OBJECTID then
+THEN
 BOOL_CONST true
-OBJECTID else
+ELSE
 IF
 OBJECTID s
 '.'
@@ -31,9 +31,9 @@ OBJECTID length
 ')'
 '='
 INT_CONST 1
-OBJECTID then
+THEN
 BOOL_CONST true
-OBJECTID else
+ELSE
 IF
 OBJECTID s
 '.'
@@ -58,7 +58,7 @@ INT_CONST 1
 ','
 INT_CONST 1
 ')'
-OBJECTID then
+THEN
 OBJECTID pal
 '('
 OBJECTID s
@@ -76,7 +76,7 @@ OBJECTID length
 INT_CONST 2
 ')'
 ')'
-OBJECTID else
+ELSE
 BOOL_CONST false
 FI
 FI
@@ -92,7 +92,7 @@ OBJECTID main
 ')'
 ':'
 TYPEID SELF
-LEXER BUG - UNMATCHED: _
+ERROR "_"
 TYPEID TYPE
 '{'
 '{'
@@ -101,9 +101,7 @@ ASSIGN
 '~'
 INT_CONST 1
 ';'
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID string
+OBJECTID out_string
 '('
 STR_CONST "enter a string\\n"
 ')'
@@ -111,23 +109,17 @@ STR_CONST "enter a string\\n"
 IF
 OBJECTID pal
 '('
-IN
-LEXER BUG - UNMATCHED: _
-OBJECTID string
+OBJECTID in_string
 '('
 ')'
 ')'
-OBJECTID then
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID string
+THEN
+OBJECTID out_string
 '('
 STR_CONST "that was a palindrome\\n"
 ')'
-OBJECTID else
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID string
+ELSE
+OBJECTID out_string
 '('
 STR_CONST "that was not a palindrome\\n"
 ')'

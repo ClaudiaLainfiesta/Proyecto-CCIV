@@ -8,17 +8,17 @@ OBJECTID main
 ')'
 ':'
 TYPEID SELF
-LEXER BUG - UNMATCHED: _
+ERROR "_"
 TYPEID TYPE
 '{'
 '('
-OBJECTID let
+LET
 OBJECTID c
 ':'
 TYPEID Complex
 ASSIGN
 '('
-OBJECTID new
+NEW
 TYPEID Complex
 ')'
 '.'
@@ -30,61 +30,38 @@ INT_CONST 1
 ')'
 IN
 '{'
-'-'
-'-'
-OBJECTID trivially
-OBJECTID equal
-'('
-OBJECTID see
-TYPEID CoolAid
-')'
 IF
 OBJECTID c
 '.'
-OBJECTID reflect
-LEXER BUG - UNMATCHED: _
-TYPEID X
+OBJECTID reflect_X
 '('
 ')'
 '='
 OBJECTID c
 '.'
-OBJECTID reflect
-LEXER BUG - UNMATCHED: _
-INT_CONST 0
+OBJECTID reflect_0
 '('
 ')'
-OBJECTID then
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID string
+THEN
+OBJECTID out_string
 '('
 STR_CONST "=)\\n"
 ')'
-OBJECTID else
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID string
+ELSE
+OBJECTID out_string
 '('
 STR_CONST "=(\\n"
 ')'
 FI
 ';'
-'-'
-'-'
-OBJECTID equal
 IF
 OBJECTID c
 '.'
-OBJECTID reflect
-LEXER BUG - UNMATCHED: _
-TYPEID X
+OBJECTID reflect_X
 '('
 ')'
 '.'
-OBJECTID reflect
-LEXER BUG - UNMATCHED: _
-TYPEID Y
+OBJECTID reflect_Y
 '('
 ')'
 '.'
@@ -92,23 +69,17 @@ OBJECTID equal
 '('
 OBJECTID c
 '.'
-OBJECTID reflect
-LEXER BUG - UNMATCHED: _
-INT_CONST 0
+OBJECTID reflect_0
 '('
 ')'
 ')'
-OBJECTID then
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID string
+THEN
+OBJECTID out_string
 '('
 STR_CONST "=)\\n"
 ')'
-OBJECTID else
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID string
+ELSE
+OBJECTID out_string
 '('
 STR_CONST "=(\\n"
 ')'
@@ -170,47 +141,35 @@ IF
 OBJECTID y
 '='
 INT_CONST 0
-OBJECTID then
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID int
+THEN
+OBJECTID out_int
 '('
 OBJECTID x
 ')'
-OBJECTID else
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID int
+ELSE
+OBJECTID out_int
 '('
 OBJECTID x
 ')'
 '.'
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID string
+OBJECTID out_string
 '('
 STR_CONST "+"
 ')'
 '.'
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID int
+OBJECTID out_int
 '('
 OBJECTID y
 ')'
 '.'
-OBJECTID out
-LEXER BUG - UNMATCHED: _
-OBJECTID string
+OBJECTID out_string
 '('
 STR_CONST "I"
 ')'
 FI
 '}'
 ';'
-OBJECTID reflect
-LEXER BUG - UNMATCHED: _
-INT_CONST 0
+OBJECTID reflect_0
 '('
 ')'
 ':'
@@ -232,9 +191,7 @@ OBJECTID self
 '}'
 '}'
 ';'
-OBJECTID reflect
-LEXER BUG - UNMATCHED: _
-TYPEID X
+OBJECTID reflect_X
 '('
 ')'
 ':'
@@ -251,9 +208,7 @@ OBJECTID self
 '}'
 '}'
 ';'
-OBJECTID reflect
-LEXER BUG - UNMATCHED: _
-TYPEID Y
+OBJECTID reflect_Y
 '('
 ')'
 ':'
@@ -284,35 +239,29 @@ OBJECTID x
 '='
 OBJECTID d
 '.'
-OBJECTID x
-LEXER BUG - UNMATCHED: _
-OBJECTID value
+OBJECTID x_value
 '('
 ')'
-OBJECTID then
+THEN
 IF
 OBJECTID y
 '='
 OBJECTID d
 '.'
-OBJECTID y
-LEXER BUG - UNMATCHED: _
-OBJECTID value
+OBJECTID y_value
 '('
 ')'
-OBJECTID then
+THEN
 BOOL_CONST true
-OBJECTID else
+ELSE
 BOOL_CONST false
 FI
-OBJECTID else
+ELSE
 BOOL_CONST false
 FI
 '}'
 ';'
-OBJECTID x
-LEXER BUG - UNMATCHED: _
-OBJECTID value
+OBJECTID x_value
 '('
 ')'
 ':'
@@ -321,9 +270,7 @@ TYPEID Int
 OBJECTID x
 '}'
 ';'
-OBJECTID y
-LEXER BUG - UNMATCHED: _
-OBJECTID value
+OBJECTID y_value
 '('
 ')'
 ':'

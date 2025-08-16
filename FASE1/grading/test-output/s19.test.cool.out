@@ -1,9 +1,1 @@
-'('
-'*'
-OBJECTID illegal
-':'
-OBJECTID unescaped
-OBJECTID newline
-'*'
-')'
 STR_CONST "c\nd"

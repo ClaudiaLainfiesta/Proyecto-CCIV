@@ -1,18 +1,19 @@
-0a1,2
-> STR_CONST "\""
-> LONGERROR
-2c4
+1,3c1
+< STR_CONST "\\"
 < STR_CONST "\"\""
+< LONGERROR
 ---
 > STR_CONST "\""
-3a6
-> STR_CONST "\"\\"
-5d7
+5c3
 < STR_CONST ""
-6a9
-> STR_CONST ""
-9d11
+---
+> STR_CONST "\""
+7d4
 < STR_CONST "\\"
-11,12d12
-< LONGERROR
+9d5
+< STR_CONST "\\"
+12c8,9
 < STR_CONST "\""
+---
+> STR_CONST "\"\"\""
+> STR_CONST "\"\""

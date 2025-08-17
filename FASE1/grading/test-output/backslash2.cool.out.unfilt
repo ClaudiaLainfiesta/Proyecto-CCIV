@@ -1,19 +1,8 @@
 #name "./backslash2.cool"
-#1 STR_CONST "I'm not going to escape this newline\n"
-#3 STR_CONST "This is also not escaped \\\n"
-#5 STR_CONST "This is, though \\\\\n"
-#7 STR_CONST "\"\n\n"
-#7 TYPEID It
-#7 ERROR "'"
-#7 OBJECTID s
-#7 OBJECTID fine
-#7 OBJECTID to
-#7 OBJECTID have
-#7 OBJECTID this
-#7 ':'
-#7 ERROR "\\"
-#7 OBJECTID n
-#7 IN
-#7 OBJECTID a
-#7 OBJECTID string
-#7 ERROR "EOF in string constant"
+#1 ERROR "Unterminated string\240constant"
+#1 ERROR "Unterminated string\240constant"
+#2 ERROR "Unterminated string\240constant"
+#2 ERROR "Unterminated string\240constant"
+#4 STR_CONST "This is, though \\"
+#6 ERROR "Unterminated string\240constant"
+#7 STR_CONST "It's fine to have this: \n in a string"

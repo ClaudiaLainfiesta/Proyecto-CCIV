@@ -199,46 +199,52 @@ alphanumerico = [A-Za-z0-9]
                             muyLargo = false;
                             yybegin(STRING);
                         }
+<STRING>[\n]    {
+                        yybegin(YYINITIAL);
+                            return new Symbol(TokenConstants.ERROR, "Unterminated string constant");
+}
 
-
-<STRING>"\0"            {
-                            return new Symbol(TokenConstants.ERROR, "String contains null character");
-                        }
-    
-<STRING>\\0           {
-                            string_buf.append("\\0");
-                        }
-
-<STRING>"\\\""          { 
-                            string_buf.append('\"'); 
-                        }
 <STRING>\\n             { 
-                            string_buf.append("\n"); 
+                            string_buf.append("\n");
                         }
 <STRING>\\t             { 
                             string_buf.append("\t"); 
                         }
+<STRING>\\b             { string_buf.append('\b'); }
+<STRING>\\f             { string_buf.append('\f'); }                        
 <STRING>\\r             { 
                             string_buf.append("\r"); 
                         }
+<STRING>"\\\""          { 
+                            string_buf.append('\"'); 
+                        }                        
 <STRING>\\\\            { 
                             string_buf.append("\\"); 
                         }
-                    
-                        
 
+<STRING>\\\n  { curr_lineno++; }
 
+<STRING>\\\t  { string_buf.append("\t"); }
 
+<STRING>\\\b {  string_buf.append('\b'); }
+
+<STRING>\\\f {  string_buf.append('\f'); }
+
+<STRING>\\\r  { string_buf.append("\r");}
+
+<STRING>\\.
+{
+    char c = yytext().charAt(1); 
+    string_buf.append(c);
+}                    
+                                           
 <STRING>[^\"]           {
                             string_buf.append(yytext());
 
                             if (string_buf.length() > MAX_STR_CONST) {
                                 muyLargo = true;
                             }
-                        }
-
-
-    
+                        }    
 <STRING>[\"]            {
                             if(muyLargo == true){
                                 yybegin(YYINITIAL);

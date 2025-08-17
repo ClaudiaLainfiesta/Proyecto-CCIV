@@ -1,24 +1,6 @@
-0a1,12
-> STR_CONST "I'm not going to escape this newline\n"
-> STR_CONST "This is also not escaped \\\n"
-> STR_CONST "This is, though \\\\\n"
-> STR_CONST "\"\n\n"
-> TYPEID It
-> ERROR "'"
-> OBJECTID s
-> OBJECTID fine
-> OBJECTID to
-> OBJECTID have
-> OBJECTID this
-> ':'
-1a14,17
-> OBJECTID n
-> IN
-> OBJECTID a
-> OBJECTID string
-3,7d18
-< LONGERROR
-< LONGERROR
+5,6c5,6
 < STR_CONST "This is, though \\\n"
 < STR_CONST "\\"
-< STR_CONST "It's fine to have this: \n in a string"
+---
+> STR_CONST "This is, though \\"
+> LONGERROR

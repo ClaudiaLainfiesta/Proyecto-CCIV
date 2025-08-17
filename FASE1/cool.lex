@@ -89,7 +89,7 @@ mayusculas = [A-Z]
 minusculas = [a-z]
 digito = [0-9]
 letra = [A-Za-z]
-alphanumerico = [A-Za-z0-9]
+alphanumerico = [A-Za-z0-9_]
 
 %%
 
@@ -178,153 +178,185 @@ alphanumerico = [A-Za-z0-9]
                                               
                                                
 
-
-<YYINITIAL>{mayusculas}[A-Za-z0-9_]*           {
+<YYINITIAL>{mayusculas}{alphanumerico}*        {
                                                    return new Symbol(TokenConstants.TYPEID, AbstractTable.idtable.addString(yytext()));
                                                }     
 
-<YYINITIAL>{minusculas}[A-Za-z0-9_]*           {
+<YYINITIAL>{minusculas}{alphanumerico}*        {
                                                    return new Symbol(TokenConstants.OBJECTID, AbstractTable.idtable.addString(yytext()));
                                                }  
 
 <YYINITIAL>{digito}+                           {
                                                    return new Symbol(TokenConstants.INT_CONST, AbstractTable.inttable.addString(yytext()));
-                                               }  
-
+                                               }
 
 
 
                         
-<YYINITIAL>[\"]         {   
-                            string_buf.delete(0,string_buf.length());
-                            muyLargo = false;
-                            yybegin(STRING);
-                        }
-<STRING>[^\\\"\n\u0000]+  {
-    string_buf.append(yytext());
-    if (string_buf.length() >= MAX_STR_CONST) {
-        muyLargo = true;
-    }
-}
+<YYINITIAL>[\"]             {   
+                                string_buf.delete(0,string_buf.length());
+                                muyLargo = false;
+                                yybegin(STRING);
+                            }
 
+<STRING>[^\\\"\n\u0000]+    {
+                                string_buf.append(yytext());
+                                if (string_buf.length() >= MAX_STR_CONST) {
+                                    muyLargo = true;
+                                }
+                            }
 
-<STRING>\\n   { string_buf.append('\n'); 
-                if (string_buf.length() >= MAX_STR_CONST) {
-                                muyLargo = true;
-                            }}
-<STRING>\\t   { string_buf.append('\t'); 
-                if (string_buf.length() >= MAX_STR_CONST) {
-                                muyLargo = true;
-                            }}
-<STRING>\\b   { string_buf.append('\b'); 
-                if (string_buf.length() >= MAX_STR_CONST) {
-                                muyLargo = true;
-                            }}
-<STRING>\\f   { string_buf.append('\f'); 
-                if (string_buf.length() >= MAX_STR_CONST) {
-                                muyLargo = true;
-                            }}
-<STRING>\\\"  { string_buf.append('\"'); 
-                if (string_buf.length() >= MAX_STR_CONST) {
-                                muyLargo = true;
-                            }}
-<STRING>\\\\  { string_buf.append('\\'); 
-                if (string_buf.length() >= MAX_STR_CONST) {
-                                muyLargo = true;
-                            }}
+<STRING>\\n     {
+                    string_buf.append('\n'); 
+                    if (string_buf.length() >= MAX_STR_CONST) {
+                        muyLargo = true;
+                    }
+                }
 
-<STRING>\\\r?\n  { curr_lineno++; 
-                    string_buf.append('\n');
+<STRING>\\t     { 
+                    string_buf.append('\t'); 
+                    if (string_buf.length() >= MAX_STR_CONST) {
+                        muyLargo = true;
+                    }
+                }
+
+<STRING>\\b     {
+                    string_buf.append('\b'); 
+                    if (string_buf.length() >= MAX_STR_CONST) {
+                        muyLargo = true;
+                    }
+                }
+
+<STRING>\\f     { 
+                    string_buf.append('\f'); 
+                    if (string_buf.length() >= MAX_STR_CONST) {
+                        muyLargo = true;
+                    }
+                }
+
+<STRING>\\\"    { 
+                    string_buf.append('\"'); 
+                    if (string_buf.length() >= MAX_STR_CONST) {
+                        muyLargo = true;
+                    }
+                }
+
+<STRING>\\\\    { 
+                    string_buf.append('\\'); 
                     if (string_buf.length() >= MAX_STR_CONST) {
                                 muyLargo = true;
-                            }}
+                    }
+                }
+                
+
+<STRING>\\\r?\n { 
+                    curr_lineno++; 
+                    string_buf.append('\n');
+                    if (string_buf.length() >= MAX_STR_CONST) {
+                         muyLargo = true;
+                    }
+                }
 
 <STRING>[\n]    {
-                        curr_lineno++;
-                        yybegin(YYINITIAL);
-                            return new Symbol(TokenConstants.ERROR, "Unterminated string constant");
-}
+                    curr_lineno++;
+                    yybegin(YYINITIAL);
+                    return new Symbol(TokenConstants.ERROR, "Unterminated string constant");
+                }
 
-<STRING>\\.
-{
-    char c = yytext().charAt(1); 
-    string_buf.append(c);
-    if (string_buf.length() >= MAX_STR_CONST) {
-                                muyLargo = true;
-                            }
-}   
+<STRING>\\.     {
+                    char c = yytext().charAt(1); 
+                    string_buf.append(c);
+                    if (string_buf.length() >= MAX_STR_CONST) {
+                        muyLargo = true;
+                    }
+                }   
 
 <STRING>\u0000  {
-    yybegin(STR_ERRSKIP);
-    return new Symbol(TokenConstants.ERROR, "String contains null character");
-}
-                                           
-<STRING>[^\"]           {
-                            string_buf.append(yytext());
-
-                            if (string_buf.length() >= MAX_STR_CONST) {
-                                muyLargo = true;
-                            }
-                        }    
-<STRING>[\"]            {
-                            if(muyLargo == true){
-                                yybegin(YYINITIAL);
-                                return new Symbol(TokenConstants.ERROR, "String constant too long");
-                            } else{
-
-                                yybegin(YYINITIAL);
-                                return new Symbol(TokenConstants.STR_CONST, AbstractTable.stringtable.addString(string_buf.toString()));
-                                }
-                                }
+                    yybegin(ERRORSTRING);
+                    return new Symbol(TokenConstants.ERROR, "String contains null character");
+                }
 
 
 
-<STR_ERRSKIP>[\"]    { yybegin(YYINITIAL); }
-<STR_ERRSKIP>\r?\n   { curr_lineno++; 
-                        yybegin(YYINITIAL); }
-<STR_ERRSKIP><<EOF>> { yybegin(YYINITIAL); }
-<STR_ERRSKIP>.       { /* comer */ }
+<STRING>[^\"]   {
+                    string_buf.append(yytext());
 
-<YYINITIAL>"(*"         {   
-                            cantComents++;
-                            yybegin(COMMENTS);
+                    if (string_buf.length() >= MAX_STR_CONST) {
+                        muyLargo = true;
+                    }
+                } 
+
+<STRING>[\"]    {
+                    if(muyLargo == true){
+                        yybegin(YYINITIAL);
+                        return new Symbol(TokenConstants.ERROR, "String constant too long");
+                    } else{
+                        yybegin(YYINITIAL);
+                        return new Symbol(TokenConstants.STR_CONST, AbstractTable.stringtable.addString(string_buf.toString()));
+                    }
+                }
+
+
+
+<ERRORSTRING>[\"]   { 
+                        yybegin(YYINITIAL); 
+                    }
+<ERRORSTRING>\r?\n  {
+                        curr_lineno++; 
+                        yybegin(YYINITIAL);
+                    }
+
+<ERRORSTRING>\0     {
+                        return new Symbol(TokenConstants.ERROR, "String contains null character");
+                    }
+<ERRORSTRING>.      { 
+                        /* comer */ 
+                    }
+
+<YYINITIAL>"(*"     {   
+                        cantComents++;
+                        yybegin(COMMENTS);
+                    }
+
+<COMMENTS>"(*"      {
+                        cantComents++;
+                    }
+
+
+<COMMENTS>"*)"      {   
+                        cantComents--;
+                        if (cantComents == 0) {
+                            yybegin(YYINITIAL);
                         }
-
-<COMMENTS>"(*"          {
-                            cantComents++;
+                        else if (cantComents < 0) {
+                            return new Symbol(TokenConstants.ERROR, "Unmatched *)");
                         }
-
-
-<COMMENTS>"*)"          {   
-                            cantComents--;
-                            if (cantComents == 0) {
-                                yybegin(YYINITIAL);
-                            }
-                            else if (cantComents < 0) {
-                                return new Symbol(TokenConstants.ERROR, "Unmatched *)");
-                            }
-                        }
+                    }
 
 <COMMENTS>[ \t\r\f]+    {
         
                         }
 
-<YYINITIAL>[\u000B]  { /* vertical tab */ } 
-<COMMENTS>[\u000B]   { /* vertical tab en comentario */ }
+<YYINITIAL>[\u000B]     {
+                            /* vertical tab */
+                        } 
+
+<COMMENTS>[\u000B]      { 
+                            /* vertical tab en comentario */ 
+                        }
 
 <COMMENTS>[\n]          {
                             curr_lineno++;
                         }
     
-<COMMENTS>.   {  }
+<COMMENTS>.     {  }
 
-<COMMENTS><<EOF>>  { return new Symbol(TokenConstants.ERROR, "EOF in comment"); }
 
 <YYINITIAL>"*)"         {
                             return new Symbol(TokenConstants.ERROR, "Unmatched *)");
                         }
 
-
+                        
 
 <YYINITIAL>"--"         {
                             yybegin(COMMENT);
@@ -339,7 +371,7 @@ alphanumerico = [A-Za-z0-9]
                             yybegin(YYINITIAL);
                         }
                         
-<COMMENT><<EOF>>        { }
+
 
 
 

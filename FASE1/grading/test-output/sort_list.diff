@@ -1,4 +1,0 @@
-341c341
-< STR_CONST "\n"
----
-> STR_CONST "\\n"

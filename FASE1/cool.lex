@@ -35,6 +35,7 @@ import java_cup.runtime.Symbol;
     }
 
     int cantComents = 0;
+    boolean muyLargo = false;
 %}
 
 %init{
@@ -177,11 +178,11 @@ alphanumerico = [A-Za-z0-9]
                                                
 
 
-<YYINITIAL>{mayusculas}{alphanumerico}*        {
+<YYINITIAL>{mayusculas}[A-Za-z0-9_]*           {
                                                    return new Symbol(TokenConstants.TYPEID, AbstractTable.idtable.addString(yytext()));
                                                }     
 
-<YYINITIAL>{minusculas}[A-Za-z0-9_]*   {
+<YYINITIAL>{minusculas}[A-Za-z0-9_]*           {
                                                    return new Symbol(TokenConstants.OBJECTID, AbstractTable.idtable.addString(yytext()));
                                                }  
 
@@ -192,19 +193,56 @@ alphanumerico = [A-Za-z0-9]
 
 
 
+                        
 <YYINITIAL>[\"]         {   
                             string_buf.delete(0,string_buf.length());
+                            muyLargo = false;
                             yybegin(STRING);
                         }
 
 
-
-<STRING>[^\"]         {
-                            string_buf.append(yytext());
+<STRING>"\0"            {
+                            return new Symbol(TokenConstants.ERROR, "String contains null character");
                         }
+    
+<STRING>\\0           {
+                            string_buf.append("\\0");
+                        }
+
+<STRING>"\\\""          { 
+                            string_buf.append('\"'); 
+                        }
+
+<STRING>\\n             { 
+                            string_buf.append("\n"); 
+                        }
+<STRING>\\t             { 
+                            string_buf.append("\t"); 
+                        }
+<STRING>\\r             { 
+                            string_buf.append("\r"); 
+                        }
+<STRING>\\\\            { 
+                            string_buf.append("\\"); 
+                        }
+
+
+
+<STRING>[^\"]           {
+                            string_buf.append(yytext());
+
+                            if (string_buf.length() > MAX_STR_CONST) {
+                                muyLargo = true;
+                            }
+                        }
+
 
     
 <STRING>[\"]            {
+                            if(muyLargo == true){
+                                yybegin(YYINITIAL);
+                                return new Symbol(TokenConstants.ERROR, "String constant too long");
+                            }
                             yybegin(YYINITIAL);
                             return new Symbol(TokenConstants.STR_CONST, AbstractTable.stringtable.addString(string_buf.toString()));
                         }

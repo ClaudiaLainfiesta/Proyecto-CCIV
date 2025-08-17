@@ -212,7 +212,6 @@ alphanumerico = [A-Za-z0-9]
 <STRING>"\\\""          { 
                             string_buf.append('\"'); 
                         }
-
 <STRING>\\n             { 
                             string_buf.append("\n"); 
                         }
@@ -225,6 +224,8 @@ alphanumerico = [A-Za-z0-9]
 <STRING>\\\\            { 
                             string_buf.append("\\"); 
                         }
+                    
+                        
 
 
 
@@ -246,9 +247,6 @@ alphanumerico = [A-Za-z0-9]
                             yybegin(YYINITIAL);
                             return new Symbol(TokenConstants.STR_CONST, AbstractTable.stringtable.addString(string_buf.toString()));
                         }
-
-
-
 
 <YYINITIAL>"(*"         {   
                             cantComents++;
@@ -273,6 +271,9 @@ alphanumerico = [A-Za-z0-9]
 <COMMENTS>[ \t\r\f]+    {
         
                         }
+
+<YYINITIAL>[\u000B]  { /* vertical tab */ } 
+<COMMENTS>[\u000B]   { /* vertical tab en comentario */ }
 
 <COMMENTS>[\n]          {
                             curr_lineno++;

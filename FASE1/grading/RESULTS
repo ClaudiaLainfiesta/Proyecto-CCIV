@@ -9,7 +9,6 @@
 	-1 (null_in_string_followed_by_tokens)	 null char in string, then tokens
 	-1 (null_in_string_unescaped_newline)	 null and unescaped newline in string
 	-1 (pathologicalstrings)	 some pathological strings
-	-1 (s04)	 different types of whitespaces
 	-1 (s19)	 unescaped newline
 	-1 (stringwithescapes)	 a long string with escaped characters
 	-1 (wq0607-c3)	 sequence of quotes and backslashes

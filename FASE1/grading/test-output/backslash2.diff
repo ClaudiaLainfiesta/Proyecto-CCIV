@@ -1,4 +1,0 @@
-5c5
-< STR_CONST "This is, though \\\n"
----
-> STR_CONST "This is, though \\"

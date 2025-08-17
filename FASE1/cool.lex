@@ -200,27 +200,58 @@ alphanumerico = [A-Za-z0-9]
                             muyLargo = false;
                             yybegin(STRING);
                         }
+<STRING>[^\\\"\n\u0000]+  {
+    string_buf.append(yytext());
+    if (string_buf.length() >= MAX_STR_CONST) {
+        muyLargo = true;
+    }
+}
+
+
+<STRING>\\n   { string_buf.append('\n'); 
+                if (string_buf.length() >= MAX_STR_CONST) {
+                                muyLargo = true;
+                            }}
+<STRING>\\t   { string_buf.append('\t'); 
+                if (string_buf.length() >= MAX_STR_CONST) {
+                                muyLargo = true;
+                            }}
+<STRING>\\b   { string_buf.append('\b'); 
+                if (string_buf.length() >= MAX_STR_CONST) {
+                                muyLargo = true;
+                            }}
+<STRING>\\f   { string_buf.append('\f'); 
+                if (string_buf.length() >= MAX_STR_CONST) {
+                                muyLargo = true;
+                            }}
+<STRING>\\\"  { string_buf.append('\"'); 
+                if (string_buf.length() >= MAX_STR_CONST) {
+                                muyLargo = true;
+                            }}
+<STRING>\\\\  { string_buf.append('\\'); 
+                if (string_buf.length() >= MAX_STR_CONST) {
+                                muyLargo = true;
+                            }}
+
+<STRING>\\\r?\n  { curr_lineno++; 
+                    string_buf.append('\n');
+                    if (string_buf.length() >= MAX_STR_CONST) {
+                                muyLargo = true;
+                            }}
+
 <STRING>[\n]    {
                         curr_lineno++;
                         yybegin(YYINITIAL);
                             return new Symbol(TokenConstants.ERROR, "Unterminated string constant");
 }
 
-<STRING>\\n   { string_buf.append('\n'); }
-<STRING>\\t   { string_buf.append('\t'); }
-<STRING>\\b   { string_buf.append('\b'); }
-<STRING>\\f   { string_buf.append('\f'); }
-<STRING>\\\"  { string_buf.append('\"'); }
-<STRING>\\\\  { string_buf.append('\\'); }
-
-<STRING>\\\r?\n  { curr_lineno++; }
-
-
-
 <STRING>\\.
 {
     char c = yytext().charAt(1); 
     string_buf.append(c);
+    if (string_buf.length() >= MAX_STR_CONST) {
+                                muyLargo = true;
+                            }
 }   
 
 <STRING>\u0000  {
@@ -231,7 +262,7 @@ alphanumerico = [A-Za-z0-9]
 <STRING>[^\"]           {
                             string_buf.append(yytext());
 
-                            if (string_buf.length() > MAX_STR_CONST) {
+                            if (string_buf.length() >= MAX_STR_CONST) {
                                 muyLargo = true;
                             }
                         }    
@@ -239,20 +270,18 @@ alphanumerico = [A-Za-z0-9]
                             if(muyLargo == true){
                                 yybegin(YYINITIAL);
                                 return new Symbol(TokenConstants.ERROR, "String constant too long");
-                            }
-                            yybegin(YYINITIAL);
-                            return new Symbol(TokenConstants.STR_CONST, AbstractTable.stringtable.addString(string_buf.toString()));
-                        }
+                            } else{
 
-<STRING>[^\\\"\n\u0000]+  {
-    string_buf.append(yytext());
-    if (string_buf.length() > MAX_STR_CONST) {
-        muyLargo = true;
-    }
-}
+                                yybegin(YYINITIAL);
+                                return new Symbol(TokenConstants.STR_CONST, AbstractTable.stringtable.addString(string_buf.toString()));
+                                }
+                                }
+
+
 
 <STR_ERRSKIP>[\"]    { yybegin(YYINITIAL); }
-<STR_ERRSKIP>\r?\n   { curr_lineno++; yybegin(YYINITIAL); }
+<STR_ERRSKIP>\r?\n   { curr_lineno++; 
+                        yybegin(YYINITIAL); }
 <STR_ERRSKIP><<EOF>> { yybegin(YYINITIAL); }
 <STR_ERRSKIP>.       { /* comer */ }
 

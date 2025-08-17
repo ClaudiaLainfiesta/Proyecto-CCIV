@@ -1,8 +1,0 @@
-#name "./backslash2.cool"
-#2 ERROR "Unterminated string\240constant"
-#3 ERROR "Unterminated string\240constant"
-#5 ERROR "Unterminated string\240constant"
-#6 ERROR "Unterminated string\240constant"
-#8 STR_CONST "This is, though \\"
-#10 STR_CONST "\\"
-#12 STR_CONST "It's fine to have this: \n in a string"

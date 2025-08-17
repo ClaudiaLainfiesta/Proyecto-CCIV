@@ -1,6 +1,4 @@
-5,6c5,6
+5c5
 < STR_CONST "This is, though \\\n"
-< STR_CONST "\\"
 ---
 > STR_CONST "This is, though \\"
-> LONGERROR

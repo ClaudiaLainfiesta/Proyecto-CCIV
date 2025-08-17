@@ -84,6 +84,7 @@ import java_cup.runtime.Symbol;
 %state STRING
 %state COMMENT
 %state COMMENTS
+%state STR_ERRSKIP
 mayusculas = [A-Z]
 minusculas = [a-z]
 digito = [0-9]
@@ -200,43 +201,32 @@ alphanumerico = [A-Za-z0-9]
                             yybegin(STRING);
                         }
 <STRING>[\n]    {
+                        curr_lineno++;
                         yybegin(YYINITIAL);
                             return new Symbol(TokenConstants.ERROR, "Unterminated string constant");
 }
 
-<STRING>\\n             { 
-                            string_buf.append("\n");
-                        }
-<STRING>\\t             { 
-                            string_buf.append("\t"); 
-                        }
-<STRING>\\b             { string_buf.append('\b'); }
-<STRING>\\f             { string_buf.append('\f'); }                        
-<STRING>\\r             { 
-                            string_buf.append("\r"); 
-                        }
-<STRING>"\\\""          { 
-                            string_buf.append('\"'); 
-                        }                        
-<STRING>\\\\            { 
-                            string_buf.append("\\"); 
-                        }
+<STRING>\\n   { string_buf.append('\n'); }
+<STRING>\\t   { string_buf.append('\t'); }
+<STRING>\\b   { string_buf.append('\b'); }
+<STRING>\\f   { string_buf.append('\f'); }
+<STRING>\\\"  { string_buf.append('\"'); }
+<STRING>\\\\  { string_buf.append('\\'); }
 
-<STRING>\\\n  { curr_lineno++; }
+<STRING>\\\r?\n  { curr_lineno++; }
 
-<STRING>\\\t  { string_buf.append("\t"); }
 
-<STRING>\\\b {  string_buf.append('\b'); }
-
-<STRING>\\\f {  string_buf.append('\f'); }
-
-<STRING>\\\r  { string_buf.append("\r");}
 
 <STRING>\\.
 {
     char c = yytext().charAt(1); 
     string_buf.append(c);
-}                    
+}   
+
+<STRING>\u0000  {
+    yybegin(STR_ERRSKIP);
+    return new Symbol(TokenConstants.ERROR, "String contains null character");
+}
                                            
 <STRING>[^\"]           {
                             string_buf.append(yytext());
@@ -253,6 +243,18 @@ alphanumerico = [A-Za-z0-9]
                             yybegin(YYINITIAL);
                             return new Symbol(TokenConstants.STR_CONST, AbstractTable.stringtable.addString(string_buf.toString()));
                         }
+
+<STRING>[^\\\"\n\u0000]+  {
+    string_buf.append(yytext());
+    if (string_buf.length() > MAX_STR_CONST) {
+        muyLargo = true;
+    }
+}
+
+<STR_ERRSKIP>[\"]    { yybegin(YYINITIAL); }
+<STR_ERRSKIP>\r?\n   { curr_lineno++; yybegin(YYINITIAL); }
+<STR_ERRSKIP><<EOF>> { yybegin(YYINITIAL); }
+<STR_ERRSKIP>.       { /* comer */ }
 
 <YYINITIAL>"(*"         {   
                             cantComents++;

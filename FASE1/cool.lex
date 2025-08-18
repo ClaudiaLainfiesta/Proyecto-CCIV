@@ -268,7 +268,7 @@ alphanumerico = [A-Za-z0-9_]
                     return new Symbol(TokenConstants.ERROR, "Unterminated string constant");
                 }
 
-<STRING>\\\0     {
+<STRING>\\\0    {
                     yybegin(ERRORSTRING);
                     return new Symbol(TokenConstants.ERROR, "String contains null character");
                 }
@@ -316,36 +316,37 @@ alphanumerico = [A-Za-z0-9_]
 <ERRORSTRING>[\"]   { 
                         yybegin(YYINITIAL); 
                     }
+
 <ERRORSTRING>\r?\n  {
                         curr_lineno++; 
                         yybegin(YYINITIAL);
                     }
 
-
-
 <ERRORSTRING>.      { 
                         /* comer */ 
                     }
 
-<YYINITIAL>"(*"     {   
-                        cantComents++;
-                        yybegin(COMMENTS);
-                    }
-
-<COMMENTS>"(*"      {
-                        cantComents++;
-                    }
 
 
-<COMMENTS>"*)"      {   
-                        cantComents--;
-                        if (cantComents == 0) {
-                            yybegin(YYINITIAL);
+<YYINITIAL>"(*"         {   
+                            cantComents++;
+                            yybegin(COMMENTS);
                         }
-                        else if (cantComents < 0) {
-                            return new Symbol(TokenConstants.ERROR, "Unmatched *)");
+
+<COMMENTS>"(*"          {
+                            cantComents++;
                         }
-                    }
+
+
+<COMMENTS>"*)"          {   
+                            cantComents--;
+                            if (cantComents == 0) {
+                                yybegin(YYINITIAL);
+                            }
+                            else if (cantComents < 0) {
+                                return new Symbol(TokenConstants.ERROR, "Unmatched *)");
+                            }
+                        }
 
 <COMMENTS>[ \t\r\f]+    {
         
@@ -363,7 +364,7 @@ alphanumerico = [A-Za-z0-9_]
                             curr_lineno++;
                         }
     
-<COMMENTS>.     {  }
+<COMMENTS>.             {  }
 
 
 <YYINITIAL>"*)"         {
@@ -385,8 +386,6 @@ alphanumerico = [A-Za-z0-9_]
                             yybegin(YYINITIAL);
                         }
                         
-
-
 
 
 <YYINITIAL>" "          {
@@ -425,7 +424,7 @@ alphanumerico = [A-Za-z0-9_]
                             return new Symbol(TokenConstants.LE);
                         }
 
-<YYINITIAL>"@"         {
+<YYINITIAL>"@"          {
                             return new Symbol(TokenConstants.AT);
                         }
 
@@ -473,6 +472,8 @@ alphanumerico = [A-Za-z0-9_]
                             return new Symbol(TokenConstants.DOT);
                         }
 
-. { return new Symbol(TokenConstants.ERROR, yytext()); }
+.                       { 
+                            return new Symbol(TokenConstants.ERROR, yytext());
+                        }
 
 

@@ -577,7 +577,9 @@ class CoolLexer implements java_cup.runtime.Scanner {
 					case -3:
 						break;
 					case 3:
-						{ return new Symbol(TokenConstants.ERROR, yytext()); }
+						{ 
+                            return new Symbol(TokenConstants.ERROR, yytext());
+                        }
 					case -4:
 						break;
 					case 4:
@@ -751,9 +753,9 @@ class CoolLexer implements java_cup.runtime.Scanner {
 						break;
 					case 32:
 						{   
-                        cantComents++;
-                        yybegin(COMMENTS);
-                    }
+                            cantComents++;
+                            yybegin(COMMENTS);
+                        }
 					case -33:
 						break;
 					case 33:
@@ -1030,20 +1032,20 @@ class CoolLexer implements java_cup.runtime.Scanner {
 						break;
 					case 72:
 						{
-                        cantComents++;
-                    }
+                            cantComents++;
+                        }
 					case -73:
 						break;
 					case 73:
 						{   
-                        cantComents--;
-                        if (cantComents == 0) {
-                            yybegin(YYINITIAL);
+                            cantComents--;
+                            if (cantComents == 0) {
+                                yybegin(YYINITIAL);
+                            }
+                            else if (cantComents < 0) {
+                                return new Symbol(TokenConstants.ERROR, "Unmatched *)");
+                            }
                         }
-                        else if (cantComents < 0) {
-                            return new Symbol(TokenConstants.ERROR, "Unmatched *)");
-                        }
-                    }
 					case -74:
 						break;
 					case 74:

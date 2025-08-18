@@ -36,6 +36,11 @@ import java_cup.runtime.Symbol;
 
     int cantComents = 0;
     boolean muyLargo = false;
+
+    public char indice(int y){
+        char x = yytext().charAt(y);
+        return x;
+    }
 %}
 
 %init{
@@ -263,18 +268,28 @@ alphanumerico = [A-Za-z0-9_]
                     return new Symbol(TokenConstants.ERROR, "Unterminated string constant");
                 }
 
+<STRING>\\\0     {
+                    yybegin(ERRORSTRING);
+                    return new Symbol(TokenConstants.ERROR, "String contains null character");
+                }
+
 <STRING>\\.     {
-                    char c = yytext().charAt(1); 
-                    string_buf.append(c);
+                    string_buf.append(indice(1));
                     if (string_buf.length() >= MAX_STR_CONST) {
                         muyLargo = true;
                     }
                 }   
 
+<STRING>\\0     {
+                    yybegin(ERRORSTRING);
+                    return new Symbol(TokenConstants.ERROR, "String contains null character");
+                }
+
 <STRING>\u0000  {
                     yybegin(ERRORSTRING);
                     return new Symbol(TokenConstants.ERROR, "String contains null character");
                 }
+        
 
 
 

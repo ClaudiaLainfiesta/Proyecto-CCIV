@@ -84,7 +84,7 @@ import java_cup.runtime.Symbol;
 %state STRING
 %state COMMENT
 %state COMMENTS
-%state STR_ERRSKIP
+%state ERRORSTRING
 mayusculas = [A-Z]
 minusculas = [a-z]
 digito = [0-9]
@@ -306,9 +306,8 @@ alphanumerico = [A-Za-z0-9_]
                         yybegin(YYINITIAL);
                     }
 
-<ERRORSTRING>\0     {
-                        return new Symbol(TokenConstants.ERROR, "String contains null character");
-                    }
+
+
 <ERRORSTRING>.      { 
                         /* comer */ 
                     }

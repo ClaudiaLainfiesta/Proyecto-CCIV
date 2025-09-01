@@ -72,6 +72,7 @@ nonterminal Feature feature;
 nonterminal Formals dummy_formal_list, formal_list;
 nonterminal Formal formal;
 nonterminal Expression expr, nested_let;
+nonterminal Expressions expr_list, dummy_expr2_list, expr2_list;
 nonterminal Cases case_branches_list;
 nonterminal Case branch;
 
@@ -162,7 +163,27 @@ formal
 	;
 
 expr
-	::= LET OBJECTID:oid COLON TYPEID:tid nested_let:nl
+	::= OBJECTID:oid ASSIGN expr:e
+		{: RESULT = new assign(curr_lineno(), oid, e); :}
+	| expr:e1 DOT OBJECTID:oid LPAREN dummy_expr2_list:e2l RPAREN
+		{: RESULT = new dispatch(curr_lineno(), e1, oid, e2l); :}
+	| expr:e1 AT TYPEID:tid DOT OBJECTID:oid LPAREN dummy_expr2_list:e2l RPAREN
+		{: RESULT = new static_dispatch(curr_lineno(), e1, tid, oid, e2l); :}
+	| expr:e1 AT TYPEID:tid DOT OBJECTID:oid LPAREN expr2_list:e2l RPAREN
+		{: RESULT = new static_dispatch(curr_lineno(), e1, tid, oid, e2l); :}
+	| expr:e1 DOT OBJECTID:oid LPAREN expr2_list:e2l RPAREN
+		{: RESULT = new dispatch(curr_lineno(), e1, oid, e2l); :}
+	| OBJECTID:oid LPAREN dummy_expr2_list:e2l RPAREN
+		{: RESULT = new dispatch(curr_lineno(), new no_expr(curr_lineno()), oid, e2l); :}
+	| OBJECTID:oid LPAREN expr2_list:e2l RPAREN
+		{: RESULT = new dispatch(curr_lineno(), new no_expr(curr_lineno()), oid, e2l); :}
+	| IF expr:ef THEN expr:et ELSE expr:es FI
+		{: RESULT = new cond(curr_lineno(), ef, et, es); :}
+	| WHILE expr:ew LOOP expr:eo POOL
+		{: RESULT = new loop(curr_lineno(), ew, eo); :}
+	| LBRACE expr_list:el RBRACE
+		{: RESULT= new block(curr_lineno(), el); :}
+	| LET OBJECTID:oid COLON TYPEID:tid nested_let:nl
 		{: RESULT = new let(curr_lineno(), oid, tid, new no_expr(curr_lineno()), nl); :}
 	| LET OBJECTID:oid COLON TYPEID:tid ASSIGN expr:e nested_let:nl
 		{: RESULT = new let(curr_lineno(), oid, tid, e, nl); :}		
@@ -200,6 +221,29 @@ expr
 	    {:RESULT = new string_const(curr_lineno(), s); :}
     | BOOL_CONST:b 
 	    {:RESULT = new bool_const(curr_lineno(), b); :}	
+	;
+
+expr_list
+	/* single expr */
+	::= expr:e SEMI
+	    {: RESULT = (new Expressions(curr_lineno())).appendElement(e); :}
+	/* several exprs */
+	| expr_list:el expr:e SEMI
+	    {: RESULT = el.appendElement(e); :}
+	;
+
+dummy_expr2_list
+	::= /* empty */
+	    {: RESULT = new Expressions(curr_lineno()); :}
+	;
+
+expr2_list
+	/* single formal */
+	::= expr:e
+	    {: RESULT = (new Expressions(curr_lineno())).appendElement(e); :}
+	/* several formals */
+	| expr2_list:el COMMA expr:e
+	    {: RESULT = el.appendElement(e); :}
 	;
 
 case_branches_list

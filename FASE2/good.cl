@@ -1,7 +1,11 @@
-class Main {
-    str:String;
+class A {
+f():Int{{
+-- valid
+while 1 loop 1 pool;
+while 1 loop while 2 loop 2 pool pool;
 
-    main():Object {
-        5
-    };
+-- not valid
+while 1 loop 1 loop;
+while 1 pool 1 pool;
+}};
 };

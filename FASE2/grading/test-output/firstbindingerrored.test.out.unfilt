@@ -1,2 +1,2 @@
-"./firstbindingerrored.test", line 2: parse error at or near '{'
+"./firstbindingerrored.test", line 2: parse error at or near TYPEID = Bork
 Compilation halted due to lex and parse errors
